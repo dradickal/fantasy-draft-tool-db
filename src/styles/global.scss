@@ -1,0 +1,36 @@
+a { color: #0070f3; }
+
+header {
+    border-bottom: 1px solid;
+}
+
+table {
+    min-width: 400px;
+}
+
+table, tr, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+tr.player {
+    display: none;
+
+    &.visible {
+        display: table-row;
+    }
+}
+
+td {
+    padding: .2rem;
+}
+
+.pageContainer {
+    min-height: 100vh;
+}
+
+.contentContainer {
+    margin: .5rem auto;
+    max-width: 95vw;
+}

@@ -1,0 +1,292 @@
+{
+    "players": [
+        {
+          "preferred": 0,
+          "tier": 1,
+          "rank": 1,
+          "playerName": "Daniel Carlson",
+          "team": "LV",
+          "byeWeek": 6,
+          "adp": "K2"
+        },
+        {
+          "preferred": 0,
+          "tier": 1,
+          "rank": 2,
+          "playerName": "Tyler Bass",
+          "team": "BUF",
+          "byeWeek": 7,
+          "adp": "K6"
+        },
+        {
+          "preferred": 0,
+          "tier": 1,
+          "rank": 3,
+          "playerName": "Nick Folk",
+          "team": "NE",
+          "byeWeek": 10,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 1,
+          "rank": 4,
+          "playerName": "Matt Gay",
+          "team": "LAR",
+          "byeWeek": 7,
+          "adp": "K5"
+        },
+        {
+          "preferred": 0,
+          "tier": 1,
+          "rank": 5,
+          "playerName": "Justin Tucker",
+          "team": "BAL",
+          "byeWeek": 10,
+          "adp": "K1"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 6,
+          "playerName": "Greg Joseph",
+          "team": "MIN",
+          "byeWeek": 7,
+          "adp": "K12"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 7,
+          "playerName": "Ryan Succop",
+          "team": "TB",
+          "byeWeek": 11,
+          "adp": "K8"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 8,
+          "playerName": "Wil Lutz",
+          "team": "NO",
+          "byeWeek": 14,
+          "adp": "K10"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 9,
+          "playerName": "Dustin Hopkins",
+          "team": "LAC",
+          "byeWeek": 8,
+          "adp": "K7"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 10,
+          "playerName": "Brandon McManus",
+          "team": "DEN",
+          "byeWeek": 9,
+          "adp": "K14"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 11,
+          "playerName": "Harrison Butker",
+          "team": "KC",
+          "byeWeek": 8,
+          "adp": "K4"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 12,
+          "playerName": "Rodrigo Blankenship",
+          "team": "IND",
+          "byeWeek": 14,
+          "adp": "K11"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 13,
+          "playerName": "Chris Boswell",
+          "team": "PIT",
+          "byeWeek": 9,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 14,
+          "playerName": "Evan McPherson",
+          "team": "CIN",
+          "byeWeek": 10,
+          "adp": "K3"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 15,
+          "playerName": "Jake Elliott",
+          "team": "PHI",
+          "byeWeek": 7,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 16,
+          "playerName": "Brett Maher",
+          "team": "DAL",
+          "byeWeek": 9,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 17,
+          "playerName": "Matt Prater",
+          "team": "ARI",
+          "byeWeek": 13,
+          "adp": "K9"
+        },
+        {
+          "preferred": 0,
+          "tier": 3,
+          "rank": 18,
+          "playerName": "Mason Crosby",
+          "team": "GB",
+          "byeWeek": 14,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 3,
+          "rank": 19,
+          "playerName": "Jason Sanders",
+          "team": "MIA",
+          "byeWeek": 11,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 3,
+          "rank": 20,
+          "playerName": "Younghoe Koo",
+          "team": "ATL",
+          "byeWeek": 14,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 3,
+          "rank": 21,
+          "playerName": "Graham Gano",
+          "team": "NYG",
+          "byeWeek": 9,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 3,
+          "rank": 22,
+          "playerName": "Robbie Gould",
+          "team": "SF",
+          "byeWeek": 9,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 3,
+          "rank": 23,
+          "playerName": "Cade York",
+          "team": "CLE",
+          "byeWeek": 9,
+          "adp": "K13"
+        },
+        {
+          "preferred": 0,
+          "tier": 3,
+          "rank": 24,
+          "playerName": "Randy Bullock",
+          "team": "TEN",
+          "byeWeek": 6,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 3,
+          "rank": 25,
+          "playerName": "Greg Zuerlein",
+          "team": "NYJ",
+          "byeWeek": 10,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 4,
+          "rank": 26,
+          "playerName": "Cairo Santos",
+          "team": "CHI",
+          "byeWeek": 14,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 4,
+          "rank": 27,
+          "playerName": "Zane Gonzalez",
+          "team": "CAR",
+          "byeWeek": 13,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 4,
+          "rank": 28,
+          "playerName": "Joey Slye",
+          "team": "WAS",
+          "byeWeek": 14,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 4,
+          "rank": 29,
+          "playerName": "Austin Seibert",
+          "team": "DET",
+          "byeWeek": 6,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 4,
+          "rank": 30,
+          "playerName": "James McCourt",
+          "team": "JAC",
+          "byeWeek": 11,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 4,
+          "rank": 31,
+          "playerName": "Jason Myers",
+          "team": "SEA",
+          "byeWeek": 11,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 4,
+          "rank": 32,
+          "playerName": "Ka'imi Fairbairn",
+          "team": "HOU",
+          "byeWeek": 6,
+          "adp": "-"
+        }
+       ]
+}

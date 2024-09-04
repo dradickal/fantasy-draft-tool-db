@@ -1,0 +1,1237 @@
+{
+    "players": [
+    {
+      "preferred": 0,
+      "tier": 1,
+      "rank": 1,
+      "playerName": "Cooper Kupp",
+      "team": "LAR",
+      "byeWeek": "7",
+      "adp": "WR1"
+    },
+    {
+      "preferred": 0,
+      "tier": 1,
+      "rank": 2,
+      "playerName": "Justin Jefferson",
+      "team": "MIN",
+      "byeWeek": "7",
+      "adp": "WR2"
+    },
+    {
+      "preferred": 0,
+      "tier": 2,
+      "rank": 3,
+      "playerName": "Ja'Marr Chase",
+      "team": "CIN",
+      "byeWeek": "10",
+      "adp": "WR3"
+    },
+    {
+      "preferred": 0,
+      "tier": 2,
+      "rank": 4,
+      "playerName": "Stefon Diggs",
+      "team": "BUF",
+      "byeWeek": "7",
+      "adp": "WR4"
+    },
+    {
+      "preferred": 0,
+      "tier": 2,
+      "rank": 5,
+      "playerName": "Davante Adams",
+      "team": "LV",
+      "byeWeek": "6",
+      "adp": "WR5"
+    },
+    {
+      "preferred": 0,
+      "tier": 2,
+      "rank": 6,
+      "playerName": "CeeDee Lamb",
+      "team": "DAL",
+      "byeWeek": "9",
+      "adp": "WR7"
+    },
+    {
+      "preferred": 0,
+      "tier": 2,
+      "rank": 7,
+      "playerName": "Tyreek Hill",
+      "team": "MIA",
+      "byeWeek": "11",
+      "adp": "WR8"
+    },
+    {
+      "preferred": 0,
+      "tier": 3,
+      "rank": 8,
+      "playerName": "Keenan Allen",
+      "team": "LAC",
+      "byeWeek": "8",
+      "adp": "WR11"
+    },
+    {
+      "preferred": 0,
+      "tier": 3,
+      "rank": 9,
+      "playerName": "Deebo Samuel",
+      "team": "SF",
+      "byeWeek": "9",
+      "adp": "WR6"
+    },
+    {
+      "preferred": 0,
+      "tier": 3,
+      "rank": 10,
+      "playerName": "Mike Evans",
+      "team": "TB",
+      "byeWeek": "11",
+      "adp": "WR9"
+    },
+    {
+      "preferred": 0,
+      "tier": 4,
+      "rank": 11,
+      "playerName": "Michael Pittman Jr.",
+      "team": "IND",
+      "byeWeek": "14",
+      "adp": "WR13"
+    },
+    {
+      "preferred": 0,
+      "tier": 4,
+      "rank": 12,
+      "playerName": "D.J. Moore",
+      "team": "CAR",
+      "byeWeek": "13",
+      "adp": "WR15"
+    },
+    {
+      "preferred": 0,
+      "tier": 4,
+      "rank": 13,
+      "playerName": "Tee Higgins",
+      "team": "CIN",
+      "byeWeek": "10",
+      "adp": "WR12"
+    },
+    {
+      "preferred": 0,
+      "tier": 4,
+      "rank": 14,
+      "playerName": "Brandin Cooks",
+      "team": "HOU",
+      "byeWeek": "6",
+      "adp": "WR21"
+    },
+    {
+      "preferred": 0,
+      "tier": 4,
+      "rank": 15,
+      "playerName": "Diontae Johnson",
+      "team": "PIT",
+      "byeWeek": "9",
+      "adp": "WR17"
+    },
+    {
+      "preferred": 0,
+      "tier": 4,
+      "rank": 16,
+      "playerName": "A.J. Brown",
+      "team": "PHI",
+      "byeWeek": "7",
+      "adp": "WR10"
+    },
+    {
+      "preferred": 0,
+      "tier": 4,
+      "rank": 17,
+      "playerName": "Mike Williams",
+      "team": "LAC",
+      "byeWeek": "8",
+      "adp": "WR18"
+    },
+    {
+      "preferred": 0,
+      "tier": 4,
+      "rank": 18,
+      "playerName": "Amon-Ra St. Brown",
+      "team": "DET",
+      "byeWeek": "6",
+      "adp": "WR22"
+    },
+    {
+      "preferred": 0,
+      "tier": 4,
+      "rank": 19,
+      "playerName": "Terry McLaurin",
+      "team": "WAS",
+      "byeWeek": "14",
+      "adp": "WR16"
+    },
+    {
+      "preferred": 0,
+      "tier": 4,
+      "rank": 20,
+      "playerName": "Darnell Mooney",
+      "team": "CHI",
+      "byeWeek": "14",
+      "adp": "WR26"
+    },
+    {
+      "preferred": 0,
+      "tier": 4,
+      "rank": 21,
+      "playerName": "DK Metcalf",
+      "team": "SEA",
+      "byeWeek": "11",
+      "adp": "WR19"
+    },
+    {
+      "preferred": 0,
+      "tier": 4,
+      "rank": 22,
+      "playerName": "Jerry Jeudy",
+      "team": "DEN",
+      "byeWeek": "9",
+      "adp": "WR27"
+    },
+    {
+      "preferred": 0,
+      "tier": 4,
+      "rank": 23,
+      "playerName": "Courtland Sutton",
+      "team": "DEN",
+      "byeWeek": "9",
+      "adp": "WR20"
+    },
+    {
+      "preferred": 0,
+      "tier": 4,
+      "rank": 24,
+      "playerName": "JuJu Smith-Schuster",
+      "team": "KC",
+      "byeWeek": "8",
+      "adp": "WR32"
+    },
+    {
+      "preferred": 0,
+      "tier": 4,
+      "rank": 25,
+      "playerName": "Michael Thomas",
+      "team": "NO",
+      "byeWeek": "14",
+      "adp": "WR29"
+    },
+    {
+      "preferred": 0,
+      "tier": 5,
+      "rank": 26,
+      "playerName": "Jaylen Waddle",
+      "team": "MIA",
+      "byeWeek": "11",
+      "adp": "WR14"
+    },
+    {
+      "preferred": 0,
+      "tier": 5,
+      "rank": 27,
+      "playerName": "Gabriel Davis",
+      "team": "BUF",
+      "byeWeek": "7",
+      "adp": "WR30"
+    },
+    {
+      "preferred": 0,
+      "tier": 5,
+      "rank": 28,
+      "playerName": "Allen Robinson",
+      "team": "LAR",
+      "byeWeek": "7",
+      "adp": "WR25"
+    },
+    {
+      "preferred": 0,
+      "tier": 5,
+      "rank": 29,
+      "playerName": "Chris Godwin",
+      "team": "TB",
+      "byeWeek": "11",
+      "adp": "WR24"
+    },
+    {
+      "preferred": 0,
+      "tier": 5,
+      "rank": 30,
+      "playerName": "Hunter Renfrow",
+      "team": "LV",
+      "byeWeek": "6",
+      "adp": "WR35"
+    },
+    {
+      "preferred": 0,
+      "tier": 5,
+      "rank": 31,
+      "playerName": "Rashod Bateman",
+      "team": "BAL",
+      "byeWeek": "10",
+      "adp": "WR33"
+    },
+    {
+      "preferred": 0,
+      "tier": 6,
+      "rank": 32,
+      "playerName": "Adam Thielen",
+      "team": "MIN",
+      "byeWeek": "7",
+      "adp": "WR31"
+    },
+    {
+      "preferred": 0,
+      "tier": 6,
+      "rank": 33,
+      "playerName": "Elijah Moore",
+      "team": "NYJ",
+      "byeWeek": "10",
+      "adp": "WR34"
+    },
+    {
+      "preferred": 0,
+      "tier": 6,
+      "rank": 34,
+      "playerName": "Christian Kirk",
+      "team": "JAC",
+      "byeWeek": "11",
+      "adp": "WR43"
+    },
+    {
+      "preferred": 0,
+      "tier": 6,
+      "rank": 35,
+      "playerName": "Drake London",
+      "team": "ATL",
+      "byeWeek": "14",
+      "adp": "WR38"
+    },
+    {
+      "preferred": 0,
+      "tier": 6,
+      "rank": 36,
+      "playerName": "Amari Cooper",
+      "team": "CLE",
+      "byeWeek": "9",
+      "adp": "WR28"
+    },
+    {
+      "preferred": 0,
+      "tier": 6,
+      "rank": 37,
+      "playerName": "Tyler Lockett",
+      "team": "SEA",
+      "byeWeek": "11",
+      "adp": "WR40"
+    },
+    {
+      "preferred": 0,
+      "tier": 6,
+      "rank": 38,
+      "playerName": "Kadarius Toney",
+      "team": "NYG",
+      "byeWeek": "9",
+      "adp": "WR46"
+    },
+    {
+      "preferred": 0,
+      "tier": 6,
+      "rank": 39,
+      "playerName": "Robert Woods",
+      "team": "TEN",
+      "byeWeek": "6",
+      "adp": "WR41"
+    },
+    {
+      "preferred": 0,
+      "tier": 6,
+      "rank": 40,
+      "playerName": "Marquise Brown",
+      "team": "ARI",
+      "byeWeek": "13",
+      "adp": "WR23"
+    },
+    {
+      "preferred": 0,
+      "tier": 6,
+      "rank": 41,
+      "playerName": "Allen Lazard",
+      "team": "GB",
+      "byeWeek": "14",
+      "adp": "WR42"
+    },
+    {
+      "preferred": 0,
+      "tier": 6,
+      "rank": 42,
+      "playerName": "Brandon Aiyuk",
+      "team": "SF",
+      "byeWeek": "9",
+      "adp": "WR39"
+    },
+    {
+      "preferred": 0,
+      "tier": 6,
+      "rank": 43,
+      "playerName": "DeAndre Hopkins",
+      "team": "ARI",
+      "byeWeek": "13",
+      "adp": "WR37"
+    },
+    {
+      "preferred": 0,
+      "tier": 6,
+      "rank": 44,
+      "playerName": "Jakobi Meyers",
+      "team": "NE",
+      "byeWeek": "10",
+      "adp": "WR56"
+    },
+    {
+      "preferred": 0,
+      "tier": 6,
+      "rank": 45,
+      "playerName": "Russell Gage",
+      "team": "TB",
+      "byeWeek": "11",
+      "adp": "WR48"
+    },
+    {
+      "preferred": 0,
+      "tier": 6,
+      "rank": 46,
+      "playerName": "Tyler Boyd",
+      "team": "CIN",
+      "byeWeek": "10",
+      "adp": "WR50"
+    },
+    {
+      "preferred": 0,
+      "tier": 6,
+      "rank": 47,
+      "playerName": "Chris Olave",
+      "team": "NO",
+      "byeWeek": "14",
+      "adp": "WR45"
+    },
+    {
+      "preferred": 0,
+      "tier": 6,
+      "rank": 48,
+      "playerName": "Treylon Burks",
+      "team": "TEN",
+      "byeWeek": "6",
+      "adp": "WR44"
+    },
+    {
+      "preferred": 0,
+      "tier": 6,
+      "rank": 49,
+      "playerName": "Chase Claypool",
+      "team": "PIT",
+      "byeWeek": "9",
+      "adp": "WR47"
+    },
+    {
+      "preferred": 0,
+      "tier": 7,
+      "rank": 50,
+      "playerName": "DeVonta Smith",
+      "team": "PHI",
+      "byeWeek": "7",
+      "adp": "WR36"
+    },
+    {
+      "preferred": 0,
+      "tier": 7,
+      "rank": 51,
+      "playerName": "Robbie Anderson",
+      "team": "CAR",
+      "byeWeek": "13",
+      "adp": "WR71"
+    },
+    {
+      "preferred": 0,
+      "tier": 7,
+      "rank": 52,
+      "playerName": "Mecole Hardman",
+      "team": "KC",
+      "byeWeek": "8",
+      "adp": "WR65"
+    },
+    {
+      "preferred": 0,
+      "tier": 7,
+      "rank": 53,
+      "playerName": "Kenny Golladay",
+      "team": "NYG",
+      "byeWeek": "9",
+      "adp": "WR58"
+    },
+    {
+      "preferred": 0,
+      "tier": 7,
+      "rank": 54,
+      "playerName": "Michael Gallup",
+      "team": "DAL",
+      "byeWeek": "9",
+      "adp": "WR60"
+    },
+    {
+      "preferred": 0,
+      "tier": 7,
+      "rank": 55,
+      "playerName": "DeVante Parker",
+      "team": "NE",
+      "byeWeek": "10",
+      "adp": "WR61"
+    },
+    {
+      "preferred": 0,
+      "tier": 7,
+      "rank": 56,
+      "playerName": "Garrett Wilson",
+      "team": "NYJ",
+      "byeWeek": "10",
+      "adp": "WR49"
+    },
+    {
+      "preferred": 0,
+      "tier": 7,
+      "rank": 57,
+      "playerName": "Marquez Valdes-Scantling",
+      "team": "KC",
+      "byeWeek": "8",
+      "adp": "WR54"
+    },
+    {
+      "preferred": 0,
+      "tier": 7,
+      "rank": 58,
+      "playerName": "Van Jefferson",
+      "team": "LAR",
+      "byeWeek": "7",
+      "adp": "WR77"
+    },
+    {
+      "preferred": 0,
+      "tier": 7,
+      "rank": 59,
+      "playerName": "George Pickens",
+      "team": "PIT",
+      "byeWeek": "9",
+      "adp": "WR55"
+    },
+    {
+      "preferred": 0,
+      "tier": 7,
+      "rank": 60,
+      "playerName": "Rondale Moore",
+      "team": "ARI",
+      "byeWeek": "13",
+      "adp": "WR53"
+    },
+    {
+      "preferred": 0,
+      "tier": 7,
+      "rank": 61,
+      "playerName": "Nico Collins",
+      "team": "HOU",
+      "byeWeek": "6",
+      "adp": "WR73"
+    },
+    {
+      "preferred": 0,
+      "tier": 7,
+      "rank": 62,
+      "playerName": "Skyy Moore",
+      "team": "KC",
+      "byeWeek": "8",
+      "adp": "WR51"
+    },
+    {
+      "preferred": 0,
+      "tier": 7,
+      "rank": 63,
+      "playerName": "Jarvis Landry",
+      "team": "NO",
+      "byeWeek": "14",
+      "adp": "WR52"
+    },
+    {
+      "preferred": 0,
+      "tier": 7,
+      "rank": 64,
+      "playerName": "Romeo Doubs",
+      "team": "GB",
+      "byeWeek": "14",
+      "adp": "WR64"
+    },
+    {
+      "preferred": 0,
+      "tier": 7,
+      "rank": 65,
+      "playerName": "Curtis Samuel",
+      "team": "WAS",
+      "byeWeek": "14",
+      "adp": "WR83"
+    },
+    {
+      "preferred": 0,
+      "tier": 7,
+      "rank": 66,
+      "playerName": "Jalen Tolbert",
+      "team": "DAL",
+      "byeWeek": "9",
+      "adp": "WR66"
+    },
+    {
+      "preferred": 0,
+      "tier": 7,
+      "rank": 67,
+      "playerName": "Jahan Dotson",
+      "team": "WAS",
+      "byeWeek": "14",
+      "adp": "WR59"
+    },
+    {
+      "preferred": 0,
+      "tier": 8,
+      "rank": 68,
+      "playerName": "KJ Hamler",
+      "team": "DEN",
+      "byeWeek": "9",
+      "adp": "WR85"
+    },
+    {
+      "preferred": 0,
+      "tier": 8,
+      "rank": 69,
+      "playerName": "Josh Palmer",
+      "team": "LAC",
+      "byeWeek": "8",
+      "adp": "WR68"
+    },
+    {
+      "preferred": 0,
+      "tier": 8,
+      "rank": 70,
+      "playerName": "Isaiah McKenzie",
+      "team": "BUF",
+      "byeWeek": "7",
+      "adp": "WR72"
+    },
+    {
+      "preferred": 0,
+      "tier": 8,
+      "rank": 71,
+      "playerName": "Marvin Jones",
+      "team": "JAC",
+      "byeWeek": "11",
+      "adp": "WR76"
+    },
+    {
+      "preferred": 0,
+      "tier": 8,
+      "rank": 72,
+      "playerName": "K.J. Osborn",
+      "team": "MIN",
+      "byeWeek": "7",
+      "adp": "WR70"
+    },
+    {
+      "preferred": 0,
+      "tier": 8,
+      "rank": 73,
+      "playerName": "Corey Davis",
+      "team": "NYJ",
+      "byeWeek": "10",
+      "adp": "WR74"
+    },
+    {
+      "preferred": 0,
+      "tier": 8,
+      "rank": 74,
+      "playerName": "Julio Jones",
+      "team": "TB",
+      "byeWeek": "11",
+      "adp": "WR62"
+    },
+    {
+      "preferred": 0,
+      "tier": 8,
+      "rank": 75,
+      "playerName": "Wan'Dale Robinson",
+      "team": "NYG",
+      "byeWeek": "9",
+      "adp": "WR78"
+    },
+    {
+      "preferred": 0,
+      "tier": 8,
+      "rank": 76,
+      "playerName": "Parris Campbell",
+      "team": "IND",
+      "byeWeek": "14",
+      "adp": "WR81"
+    },
+    {
+      "preferred": 0,
+      "tier": 8,
+      "rank": 77,
+      "playerName": "Christian Watson",
+      "team": "GB",
+      "byeWeek": "14",
+      "adp": "WR63"
+    },
+    {
+      "preferred": 0,
+      "tier": 8,
+      "rank": 78,
+      "playerName": "Zay Jones",
+      "team": "JAC",
+      "byeWeek": "11",
+      "adp": "WR92"
+    },
+    {
+      "preferred": 0,
+      "tier": 8,
+      "rank": 79,
+      "playerName": "Alec Pierce",
+      "team": "IND",
+      "byeWeek": "14",
+      "adp": "WR69"
+    },
+    {
+      "preferred": 0,
+      "tier": 8,
+      "rank": 80,
+      "playerName": "Devin Duvernay",
+      "team": "BAL",
+      "byeWeek": "10",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 8,
+      "rank": 81,
+      "playerName": "Nick Westbrook-Ikhine",
+      "team": "TEN",
+      "byeWeek": "6",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 82,
+      "playerName": "Jameson Williams",
+      "team": "DET",
+      "byeWeek": "6",
+      "adp": "WR67"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 83,
+      "playerName": "Nelson Agholor",
+      "team": "NE",
+      "byeWeek": "10",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 84,
+      "playerName": "D.J. Chark",
+      "team": "DET",
+      "byeWeek": "6",
+      "adp": "WR57"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 85,
+      "playerName": "Donovan Peoples-Jones",
+      "team": "CLE",
+      "byeWeek": "9",
+      "adp": "WR84"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 86,
+      "playerName": "Sammy Watkins",
+      "team": "GB",
+      "byeWeek": "14",
+      "adp": "WR75"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 87,
+      "playerName": "Randall Cobb",
+      "team": "GB",
+      "byeWeek": "14",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 88,
+      "playerName": "Cedrick Wilson",
+      "team": "MIA",
+      "byeWeek": "11",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 89,
+      "playerName": "A.J. Green",
+      "team": "ARI",
+      "byeWeek": "13",
+      "adp": "WR90"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 90,
+      "playerName": "Braxton Berrios",
+      "team": "NYJ",
+      "byeWeek": "10",
+      "adp": "WR91"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 91,
+      "playerName": "Jamison Crowder",
+      "team": "BUF",
+      "byeWeek": "7",
+      "adp": "WR80"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 92,
+      "playerName": "Dee Eskridge",
+      "team": "SEA",
+      "byeWeek": "11",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 93,
+      "playerName": "Velus Jones Jr.",
+      "team": "CHI",
+      "byeWeek": "14",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 94,
+      "playerName": "Sterling Shepard",
+      "team": "NYG",
+      "byeWeek": "9",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 95,
+      "playerName": "Anthony Schwartz",
+      "team": "CLE",
+      "byeWeek": "9",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 96,
+      "playerName": "Laviska Shenault",
+      "team": "JAC",
+      "byeWeek": "11",
+      "adp": "WR88"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 97,
+      "playerName": "Olamide Zaccheaus",
+      "team": "ATL",
+      "byeWeek": "14",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 98,
+      "playerName": "Terrace Marshall Jr.",
+      "team": "CAR",
+      "byeWeek": "13",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 99,
+      "playerName": "Chris Conley",
+      "team": "HOU",
+      "byeWeek": "6",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 100,
+      "playerName": "Quez Watkins",
+      "team": "PHI",
+      "byeWeek": "7",
+      "adp": "WR93"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 101,
+      "playerName": "Jalen Guyton",
+      "team": "LAC",
+      "byeWeek": "8",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 102,
+      "playerName": "Bryan Edwards",
+      "team": "ATL",
+      "byeWeek": "14",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 103,
+      "playerName": "David Bell",
+      "team": "CLE",
+      "byeWeek": "9",
+      "adp": "WR82"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 104,
+      "playerName": "Byron Pringle",
+      "team": "CHI",
+      "byeWeek": "14",
+      "adp": "WR94"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 105,
+      "playerName": "James Washington",
+      "team": "DAL",
+      "byeWeek": "9",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 106,
+      "playerName": "Zach Pascal",
+      "team": "PHI",
+      "byeWeek": "7",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 9,
+      "rank": 107,
+      "playerName": "Ben Skowronek",
+      "team": "LAR",
+      "byeWeek": "7",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 108,
+      "playerName": "Equanimeous St. Brown",
+      "team": "CHI",
+      "byeWeek": "14",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 109,
+      "playerName": "Keelan Cole",
+      "team": "LV",
+      "byeWeek": "6",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 110,
+      "playerName": "Jauan Jennings",
+      "team": "SF",
+      "byeWeek": "9",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 111,
+      "playerName": "Josh Reynolds",
+      "team": "DET",
+      "byeWeek": "6",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 112,
+      "playerName": "Kendrick Bourne",
+      "team": "NE",
+      "byeWeek": "10",
+      "adp": "WR87"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 113,
+      "playerName": "James Proche",
+      "team": "BAL",
+      "byeWeek": "10",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 114,
+      "playerName": "Kyle Philips",
+      "team": "TEN",
+      "byeWeek": "6",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 115,
+      "playerName": "Antoine Wesley",
+      "team": "ARI",
+      "byeWeek": "13",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 116,
+      "playerName": "Amari Rodgers",
+      "team": "GB",
+      "byeWeek": "14",
+      "adp": "WR86"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 117,
+      "playerName": "Freddie Swain",
+      "team": "SEA",
+      "byeWeek": "11",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 118,
+      "playerName": "Trent Sherfield",
+      "team": "MIA",
+      "byeWeek": "11",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 119,
+      "playerName": "Dez Fitzpatrick",
+      "team": "TEN",
+      "byeWeek": "6",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 120,
+      "playerName": "Marquez Callaway",
+      "team": "NO",
+      "byeWeek": "14",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 121,
+      "playerName": "Tutu Atwell",
+      "team": "LAR",
+      "byeWeek": "7",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 122,
+      "playerName": "Miles Boykin",
+      "team": "PIT",
+      "byeWeek": "9",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 123,
+      "playerName": "Laquon Treadwell",
+      "team": "JAC",
+      "byeWeek": "11",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 124,
+      "playerName": "Tyler Johnson",
+      "team": "TB",
+      "byeWeek": "11",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 125,
+      "playerName": "Phillip Dorsett",
+      "team": "HOU",
+      "byeWeek": "6",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 126,
+      "playerName": "Ihmir Smith-Marsette",
+      "team": "MIN",
+      "byeWeek": "7",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 127,
+      "playerName": "Noah Brown",
+      "team": "DAL",
+      "byeWeek": "9",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 128,
+      "playerName": "Breshad Perriman",
+      "team": "TB",
+      "byeWeek": "11",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 129,
+      "playerName": "Simi Fehoko",
+      "team": "DAL",
+      "byeWeek": "9",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 130,
+      "playerName": "Ashton Dulin",
+      "team": "IND",
+      "byeWeek": "14",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 131,
+      "playerName": "Khalil Shakir",
+      "team": "BUF",
+      "byeWeek": "7",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 132,
+      "playerName": "Ray-Ray McCloud",
+      "team": "SF",
+      "byeWeek": "9",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 133,
+      "playerName": "Tylan Wallace",
+      "team": "BAL",
+      "byeWeek": "10",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 134,
+      "playerName": "Kalif Raymond",
+      "team": "DET",
+      "byeWeek": "6",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 135,
+      "playerName": "Deonte Harty",
+      "team": "NO",
+      "byeWeek": "14",
+      "adp": "-"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 136,
+      "playerName": "Odell Beckham Jr.",
+      "team": "FA",
+      "byeWeek": "-",
+      "adp": "WR79"
+    },
+    {
+      "preferred": 0,
+      "tier": 10,
+      "rank": 137,
+      "playerName": "Will Fuller",
+      "team": "FA",
+      "byeWeek": "-",
+      "adp": "WR89"
+    }
+   ]
+}
