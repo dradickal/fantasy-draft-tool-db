@@ -32,7 +32,7 @@ export const App = () => {
         <header>
           {/* Add Favicon SVG next to tile */}
           <span className='asH1'>
-            Fantasy Draft Tool ({`${playersHydrated}`})
+            Fantasy Draft Tool
           </span>
         </header>
         <div className='contentContainer'>
