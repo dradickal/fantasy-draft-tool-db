@@ -34,7 +34,7 @@ function addPlayerProperties(player:PlayerData):Player {
 
 export function createAndSeedStore(seededCallback:Function, year = new Date().getFullYear()) {
     const store = createStore();
-    const localData = localStorage?.DraftTool;
+    const localData = localStorage['DraftTool' + year];
     if(localData) {
         store.setJson(localData);
         seededCallback();
