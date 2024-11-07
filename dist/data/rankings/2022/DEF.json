@@ -1,0 +1,292 @@
+{
+    "players": [
+        {
+          "preferred": 0,
+          "tier": 1,
+          "rank": 1,
+          "playerName": "Los Angeles Rams",
+          "team": "LAR",
+          "byeWeek": 7,
+          "adp": "DEF9"
+        },
+        {
+          "preferred": 0,
+          "tier": 1,
+          "rank": 2,
+          "playerName": "Tampa Bay Buccaneers",
+          "team": "TB",
+          "byeWeek": 11,
+          "adp": "DEF2"
+        },
+        {
+          "preferred": 0,
+          "tier": 1,
+          "rank": 3,
+          "playerName": "Dallas Cowboys",
+          "team": "DAL",
+          "byeWeek": 9,
+          "adp": "DEF3"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 4,
+          "playerName": "Pittsburgh Steelers",
+          "team": "PIT",
+          "byeWeek": 9,
+          "adp": "DEF14"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 5,
+          "playerName": "New England Patriots",
+          "team": "NE",
+          "byeWeek": 10,
+          "adp": "DEF5"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 6,
+          "playerName": "Buffalo Bills",
+          "team": "BUF",
+          "byeWeek": 7,
+          "adp": "DEF1"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 7,
+          "playerName": "Kansas City Chiefs",
+          "team": "KC",
+          "byeWeek": 8,
+          "adp": "DEF12"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 8,
+          "playerName": "Indianapolis Colts",
+          "team": "IND",
+          "byeWeek": 14,
+          "adp": "DEF4"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 9,
+          "playerName": "New Orleans Saints",
+          "team": "NO",
+          "byeWeek": 14,
+          "adp": "DEF6"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 10,
+          "playerName": "Green Bay Packers",
+          "team": "GB",
+          "byeWeek": 14,
+          "adp": "DEF15"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 11,
+          "playerName": "Miami Dolphins",
+          "team": "MIA",
+          "byeWeek": 11,
+          "adp": "DEF7"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 12,
+          "playerName": "Denver Broncos",
+          "team": "DEN",
+          "byeWeek": 9,
+          "adp": "DEF10"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 13,
+          "playerName": "San Francisco 49ers",
+          "team": "SF",
+          "byeWeek": 9,
+          "adp": "DEF8"
+        },
+        {
+          "preferred": 0,
+          "tier": 2,
+          "rank": 14,
+          "playerName": "Los Angeles Chargers",
+          "team": "LAC",
+          "byeWeek": 8,
+          "adp": "DEF11"
+        },
+        {
+          "preferred": 0,
+          "tier": 3,
+          "rank": 15,
+          "playerName": "Washington Commanders",
+          "team": "WAS",
+          "byeWeek": 14,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 3,
+          "rank": 16,
+          "playerName": "Cleveland Browns",
+          "team": "CLE",
+          "byeWeek": 9,
+          "adp": "DEF17"
+        },
+        {
+          "preferred": 0,
+          "tier": 3,
+          "rank": 17,
+          "playerName": "Philadelphia Eagles",
+          "team": "PHI",
+          "byeWeek": 7,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 3,
+          "rank": 18,
+          "playerName": "Arizona Cardinals",
+          "team": "ARI",
+          "byeWeek": 13,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 3,
+          "rank": 19,
+          "playerName": "Baltimore Ravens",
+          "team": "BAL",
+          "byeWeek": 10,
+          "adp": "DEF13"
+        },
+        {
+          "preferred": 0,
+          "tier": 3,
+          "rank": 20,
+          "playerName": "Tennessee Titans",
+          "team": "TEN",
+          "byeWeek": 6,
+          "adp": "DEF18"
+        },
+        {
+          "preferred": 0,
+          "tier": 3,
+          "rank": 21,
+          "playerName": "Chicago Bears",
+          "team": "CHI",
+          "byeWeek": 14,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 4,
+          "rank": 22,
+          "playerName": "Seattle Seahawks",
+          "team": "SEA",
+          "byeWeek": 11,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 4,
+          "rank": 23,
+          "playerName": "Minnesota Vikings",
+          "team": "MIN",
+          "byeWeek": 7,
+          "adp": "DEF16"
+        },
+        {
+          "preferred": 0,
+          "tier": 4,
+          "rank": 24,
+          "playerName": "Carolina Panthers",
+          "team": "CAR",
+          "byeWeek": 13,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 4,
+          "rank": 25,
+          "playerName": "Jacksonville Jaguars",
+          "team": "JAC",
+          "byeWeek": 11,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 4,
+          "rank": 26,
+          "playerName": "New York Giants",
+          "team": "NYG",
+          "byeWeek": 9,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 4,
+          "rank": 27,
+          "playerName": "Atlanta Falcons",
+          "team": "ATL",
+          "byeWeek": 14,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 4,
+          "rank": 28,
+          "playerName": "Cincinnati Bengals",
+          "team": "CIN",
+          "byeWeek": 10,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 4,
+          "rank": 29,
+          "playerName": "Las Vegas Raiders",
+          "team": "LV",
+          "byeWeek": 6,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 4,
+          "rank": 30,
+          "playerName": "Detroit Lions",
+          "team": "DET",
+          "byeWeek": 6,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 4,
+          "rank": 31,
+          "playerName": "Houston Texans",
+          "team": "HOU",
+          "byeWeek": 6,
+          "adp": "-"
+        },
+        {
+          "preferred": 0,
+          "tier": 4,
+          "rank": 32,
+          "playerName": "New York Jets",
+          "team": "NYJ",
+          "byeWeek": 10,
+          "adp": "-"
+        }
+       ]
+}

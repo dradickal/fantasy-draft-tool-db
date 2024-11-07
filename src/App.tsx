@@ -10,13 +10,14 @@ import { PersisterContext } from './utils/PersisterContext';
 const positionTables: Array<string> = ["QB", "RB", "WR", "TE", "DEF", "K"];
 
 export const App = () => {
+  const year = new Date().getFullYear();
   const [playersHydrated, setPlayersHydrated] = useState(false);
   const store = useCreateStore(() => createAndSeedStore(() => {
     setPlayersHydrated(true);
   }));
   const queries = useCreateQueries(store, (store) => createQueries(store));
   const indexes = useCreateIndexes(store, (store) => createIndexes(store));
-  const persister = useCreatePersister(store, (store) => createLocalPersister(store, 'DraftTool'))
+  const persister = useCreatePersister(store, (store) => createLocalPersister(store, 'DraftTool' + year))
   
   // @ts-ignore
   window.DraftTool = {};
@@ -32,7 +33,7 @@ export const App = () => {
         <header>
           {/* Add Favicon SVG next to tile */}
           <span className='asH1'>
-            Fantasy Draft Tool ({`${playersHydrated}`})
+            Fantasy Draft Tool
           </span>
         </header>
         <div className='contentContainer'>
