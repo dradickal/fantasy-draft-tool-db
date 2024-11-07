@@ -10,7 +10,7 @@ const defaultDataHandler = (pos: string, data: { players: Array<PlayerData>},) =
 
 async function fetchPositionData(year:number, dataCallback = defaultDataHandler) {
     return Promise.all(positions.map(
-        (pos) => fetch(`/data/rankings/${year}/${pos}.json`, {
+        (pos) => fetch(import.meta.env.BASE_URL + `data/rankings/${year}/${pos}.json`, {
             headers: {
                 "Content-Type": "application/json",
             },
