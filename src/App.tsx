@@ -31,7 +31,7 @@ export const App = () => {
       <Provider store={store} queries={queries} indexes={indexes}>
       <PersisterContext.Provider value={persister}>
         <header>
-          <img className='header-icon' src='/public/favicon.svg' alt='American Football'/>
+          <img className='header-icon' src={import.meta.env.BASE_URL+'favicon.svg'} alt='American Football'/>
           <h1>
             Fantasy Draft Tool
           </h1>
