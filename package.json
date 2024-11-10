@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --force",
-    "build": "tsc && vite build --base=/demo/fantasy-draft-app/",
+    "build": "tsc && vite build --base=/demo/fantasy-draft-tool/",
     "preview": "vite preview"
   },
   "devDependencies": {
