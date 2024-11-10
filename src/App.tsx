@@ -31,10 +31,10 @@ export const App = () => {
       <Provider store={store} queries={queries} indexes={indexes}>
       <PersisterContext.Provider value={persister}>
         <header>
-          {/* Add Favicon SVG next to tile */}
-          <span className='asH1'>
+          <img className='header-icon' src='/public/favicon.svg' alt='American Football'/>
+          <h1>
             Fantasy Draft Tool
-          </span>
+          </h1>
         </header>
         <div className='contentContainer'>
           <div className='rankTables'>

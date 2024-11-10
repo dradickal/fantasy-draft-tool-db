@@ -1,7 +1,14 @@
 a { color: #0070f3; }
 
 header {
+    display: flex;
     border-bottom: 1px solid;
+    padding-left: 2em;
+}
+
+.header-icon {
+    width: 60px;
+    padding-right: 1em;
 }
 
 .asH1 {

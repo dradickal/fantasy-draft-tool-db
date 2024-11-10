@@ -30,7 +30,7 @@ export default function PlayerTable() {
 
     return (
         <>
-            <h1>{positionTable} Rankings</h1>
+            <h2>{positionTable} Rankings</h2>
             <table>
                 <thead>
                     <tr>{headerText.map((text, i) => (<th key={text || `empty${i}`}>{text}</th>))}</tr>
