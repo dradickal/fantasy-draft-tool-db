@@ -8,17 +8,24 @@ import { PositionTableContext } from './utils/PositionTableContext';
 import { PersisterContext } from './utils/PersisterContext';
 
 const positionTables: Array<string> = ["QB", "RB", "WR", "TE", "DEF", "K"];
+const years: Array<number> = [2024, 2022];
 
 export const App = () => {
-  const year = new Date().getFullYear();
-  const [playersHydrated, setPlayersHydrated] = useState(false);
+  const [year, setYear] = useState<number>(years[0]);
+  const [playersHydrated, setPlayersHydrated] = useState<boolean>(false);
   const store = useCreateStore(() => createAndSeedStore(() => {
     setPlayersHydrated(true);
-  }));
+  }, year), [year]);
   const queries = useCreateQueries(store, (store) => createQueries(store));
   const indexes = useCreateIndexes(store, (store) => createIndexes(store));
-  const persister = useCreatePersister(store, (store) => createLocalPersister(store, 'DraftTool' + year))
+  const persister = useCreatePersister(store, (store) => createLocalPersister(store, 'DraftTool' + year));
   
+  const handleYearChange = (event: React.ChangeEvent<HTMLSelectElement>) => { 
+    const selectedYear = parseInt(event.target.value);
+    setYear(selectedYear);
+    setPlayersHydrated(false);
+  };
+
   // @ts-ignore
   window.DraftTool = {};
   // @ts-ignore
@@ -31,10 +38,17 @@ export const App = () => {
       <Provider store={store} queries={queries} indexes={indexes}>
       <PersisterContext.Provider value={persister}>
         <header>
-          <img className='header-icon' src={import.meta.env.BASE_URL+'favicon.svg'} alt='American Football'/>
-          <h1>
-            Fantasy Draft Tool
-          </h1>
+          <div className='header-title'>
+            <img className='header-icon' src={import.meta.env.BASE_URL+'favicon.svg'} alt='American Football'/>
+            <h1>Fantasy Draft Tool</h1>
+          </div>
+          <div className='header-tools'>
+            <select id='year-select' defaultValue={years[0]} onChange={handleYearChange}>
+              {years.map((year) => (
+                <option key={year} value={year}>{year}</option>
+              ))}
+            </select>
+          </div>
         </header>
         <div className='contentContainer'>
           <div className='rankTables'>
