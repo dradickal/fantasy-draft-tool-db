@@ -23,6 +23,8 @@ async function fetchPositionData(year:number, dataCallback = defaultDataHandler)
             }
         ).then((data) => {
             dataCallback(pos, data);
+        }).catch((error) => {
+            console.error(`Error fetching ${pos} data:`, error);
         })
     ));
 }
