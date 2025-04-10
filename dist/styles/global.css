@@ -6,9 +6,19 @@ header {
     padding-left: 2em;
 }
 
+.header-title {
+    display: flex;
+    flex: fit-content;
+}
 .header-icon {
     width: 60px;
     padding-right: 1em;
+}
+
+.header-tools {
+    display: flex;
+    align-items: center;
+    flex: fit-content;
 }
 
 .asH1 {
