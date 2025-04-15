@@ -7,9 +7,36 @@ type FantasyTeamFormProps = {
     setFantasyTeam: (fantasyTeam:FantasyTeam) => void;
 }
 
+type DelayLabel = string | null;
+type DelayId = number | null;
+
+
+class InputDelay {
+    delay:number
+    timeoutId:DelayId = null;
+    label:DelayLabel = null;
+
+    constructor(delay:number = 1000) {
+        this.delay = delay;
+    }
+
+    startDelay(label:DelayLabel, inputValue:string) {
+        this.label = label;
+        this.timeoutId = setTimeout((v:string, l:string) => {
+            console.log(l, v);
+        }, this.delay, inputValue, label);
+    }
+
+    cancelDelay() {
+        if(this.timeoutId === null) return;
+        clearTimeout(this.timeoutId as number);
+    }
+}
+
 export function FantasyTeamForm({ teamCount, currentTeam, setFantasyTeam }:FantasyTeamFormProps) {
     const form = useRef<HTMLFormElement>(null);
     const i = currentTeam.order;
+    let activeDelay = new InputDelay(1800);
 
     function submitTeamForm(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
@@ -19,8 +46,15 @@ export function FantasyTeamForm({ teamCount, currentTeam, setFantasyTeam }:Fanta
     }
 
     function inputListener(e:any) {
-        console.log(e.currentTarget);
-        console.log(`${e.currentTarget.getAttribute("name")}:${e.target.name}:`, e.target.value);
+        const form = e.currentTarget as HTMLFormElement;
+        const fantasyTeamID = form.dataset.id;
+        const label = `${fantasyTeamID}:${e.target.name}`;
+        
+        if (activeDelay.label === label) {
+            activeDelay.cancelDelay();
+        }
+
+        activeDelay.startDelay(label, e.target.value);
     }
 
     return (
