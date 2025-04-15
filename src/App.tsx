@@ -44,11 +44,15 @@ export const App = () => {
             <h1>Fantasy Draft Tool</h1>
           </div>
           <div className='header-tools'>
-            <select id='year-select' defaultValue={years[0]} onChange={handleYearChange}>
+            <select id='year-select' name='draft-year' defaultValue={years[0]} onChange={handleYearChange}>
               {years.map((year) => (
                 <option key={year} value={year}>{year}</option>
               ))}
             </select>
+            <div className='input-group'>
+              <input type='checkbox' id='hide-drafted' name='hide-drafted' value="true" defaultChecked />
+              <label htmlFor='hide-drafted'>Hide Drafted Players</label>
+            </div>
           </div>
         </header>
         <div className='contentContainer'>
