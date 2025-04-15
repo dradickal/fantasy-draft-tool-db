@@ -41,7 +41,7 @@ export default function PlayerRow({ rowId }: PlayerRowProps) {
         <tr className={cn('player', {visible: !player.drafted})} >
             <td><button id={`${rowId}`} onClick={(e)=>beenDrafted(e, rowId)}>Drafted</button></td>
             <td>{player.rank}</td>
-            <td className={cn({drafted: player.drafted})}>{player.playerName}</td>
+            <td className={cn('playerNameCol', {drafted: player.drafted})}>{player.playerName}</td>
             <td>{player.team}</td>
             <td>{player.byeWeek}</td>
             <td>{player.adp}</td>

@@ -48,6 +48,15 @@ tr.player.visible {
     display: table-row;
 }
 
+.playerNameCol {
+    text-align: left;
+}
+.playerNameCol.drafted {
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+}
+
 td {
     padding: .2rem;
 }
