@@ -3,9 +3,10 @@ import { Provider, useCreateIndexes, useCreateQueries, useCreateStore, useCreate
 import { createIndexes, createQueries } from 'tinybase';
 import { createLocalPersister } from 'tinybase/persisters/persister-browser';
 import { createAndSeedStore } from './utils/store';
-import PlayerTable from './PlayerTable';
 import { PositionTableContext } from './utils/PositionTableContext';
 import { PersisterContext } from './utils/PersisterContext';
+import PlayerTable from './PlayerTable';
+import LeagueSettings from './LeagueSettings';
 
 const positionTables: Array<string> = ["QB", "RB", "WR", "TE", "DEF", "K"];
 const years: Array<number> = [2024, 2022];
@@ -60,6 +61,7 @@ export const App = () => {
                 </section>
             ))}
           </div>
+          <LeagueSettings />
         </div>
       </PersisterContext.Provider>
       </Provider>
