@@ -5,6 +5,7 @@ import { useRow, useSetCellCallback } from "tinybase/ui-react";
 import { usePositionTable } from "./utils/PositionTableContext";
 import { Player } from "./utils/dataTypes";
 import { usePersister } from "./utils/PersisterContext";
+import { useHidePlayers } from "./utils/HidePlayersContext";
 
 type PlayerRowProps = {
     rowId: Id;
@@ -12,10 +13,18 @@ type PlayerRowProps = {
 
 export default function PlayerRow({ rowId }: PlayerRowProps) {
     const positionTable = usePositionTable();
+    const hideDraftedPlayers = useHidePlayers();
     const persister = usePersister();
     const playerRow = useRow(positionTable, rowId);
     const [player, setPlayer] = useState<Player>();
 
+    const showPlayer = () => {
+        if (player && player.drafted) {
+            return !hideDraftedPlayers;
+        }
+
+        return true;
+    }
     
     useEffect(() => {
         if (playerRow) {
@@ -38,8 +47,8 @@ export default function PlayerRow({ rowId }: PlayerRowProps) {
     }
 
     return player ? (
-        <tr className={cn('player', {visible: !player.drafted})} >
-            <td><button id={`${rowId}`} onClick={(e)=>beenDrafted(e, rowId)}>Drafted</button></td>
+        <tr className={cn('player', {visible: showPlayer()})} >
+            <td>{!player.drafted && <button id={`${rowId}`} onClick={(e)=>beenDrafted(e, rowId)}>Draft</button>}</td>
             <td>{player.rank}</td>
             <td className={cn('playerNameCol', {drafted: player.drafted})}>{player.playerName}</td>
             <td>{player.team}</td>

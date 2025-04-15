@@ -4,6 +4,7 @@ import { createIndexes, createQueries } from 'tinybase';
 import { createLocalPersister } from 'tinybase/persisters/persister-browser';
 import { createAndSeedStore } from './utils/store';
 import { PositionTableContext } from './utils/PositionTableContext';
+import { HidePlayersContext } from './utils/HidePlayersContext';
 import { PersisterContext } from './utils/PersisterContext';
 import PlayerTable from './PlayerTable';
 import LeagueSettings from './LeagueSettings';
@@ -14,6 +15,7 @@ const years: Array<number> = [2024, 2022];
 export const App = () => {
   const [year, setYear] = useState<number>(years[0]);
   const [playersHydrated, setPlayersHydrated] = useState<boolean>(false);
+  const [hideDraftedPlayers, setHideDraftedPlayers] = useState<boolean>(false)
   const store = useCreateStore(() => createAndSeedStore(() => {
     setPlayersHydrated(true);
   }, year), [year]);
@@ -26,6 +28,10 @@ export const App = () => {
     setYear(selectedYear);
     setPlayersHydrated(false);
   };
+
+  const handleHidePlayers = (event:React.ChangeEvent<HTMLInputElement>) => {
+    setHideDraftedPlayers(event.target.checked)
+  }
 
   // @ts-ignore
   window.DraftTool = {};
@@ -50,8 +56,8 @@ export const App = () => {
               ))}
             </select>
             <div className='input-group'>
-              <input type='checkbox' id='hide-drafted' name='hide-drafted' value="true" defaultChecked />
-              <label htmlFor='hide-drafted'>Hide Drafted Players</label>
+              <input type='checkbox' id='hide-players' name='hide-players' onChange={handleHidePlayers} checked={hideDraftedPlayers} />
+              <label htmlFor='hide-players'>Hide Drafted Players</label>
             </div>
           </div>
         </header>
@@ -60,7 +66,9 @@ export const App = () => {
             {positionTables.map((tableId) => (
                 <section className="positionTable" key={tableId}>
                   <PositionTableContext.Provider value={tableId} >
+                  <HidePlayersContext.Provider value={hideDraftedPlayers}>
                     <PlayerTable />
+                  </HidePlayersContext.Provider>
                   </PositionTableContext.Provider>
                 </section>
             ))}
