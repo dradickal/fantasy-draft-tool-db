@@ -14,12 +14,19 @@ import LeagueSettings from './LeagueSettings';
 const positionTables: Array<string> = ["QB", "RB", "WR", "TE", "DEF", "K"];
 const years: Array<number> = [2024, 2022];
 
-console.log(urlParams);
+const setDebugData = (queries:any, indexes:any) => {
+  // @ts-ignore
+  window.DraftTool = {};
+  // @ts-ignore
+  window.DraftTool.queries = queries;
+  // @ts-ignore
+  window.DraftTool.indexes = indexes;
+}
 
 export const App = () => {
   const [year, setYear] = useState<number>(years[0]);
   const [playersHydrated, setPlayersHydrated] = useState<boolean>(false);
-  const [hideDraftedPlayers, setHideDraftedPlayers] = useState<boolean>(false)
+  const [hideDraftedPlayers, setHideDraftedPlayers] = useState<boolean>(true);
   const store = useCreateStore(() => createAndSeedStore(() => {
     setPlayersHydrated(true);
   }, year), [year]);
@@ -42,12 +49,7 @@ export const App = () => {
     location.reload()
   }
 
-  // @ts-ignore
-  window.DraftTool = {};
-  // @ts-ignore
-  window.DraftTool.queries = queries;
-  // @ts-ignore
-  window.DraftTool.indexes = indexes;
+  setDebugData(queries, indexes);
 
   return (
     <StrictMode>
