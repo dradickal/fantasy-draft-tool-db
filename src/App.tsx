@@ -1,4 +1,5 @@
 import { StrictMode, useState } from 'react';
+import cn from "classnames";
 import { Provider, useCreateIndexes, useCreateQueries, useCreateStore, useCreatePersister } from 'tinybase/ui-react';
 import { createIndexes, createQueries } from 'tinybase';
 import { createLocalPersister } from 'tinybase/persisters/persister-browser';
@@ -6,11 +7,14 @@ import { createAndSeedStore } from './utils/store';
 import { PositionTableContext } from './utils/PositionTableContext';
 import { HidePlayersContext } from './utils/HidePlayersContext';
 import { PersisterContext } from './utils/PersisterContext';
+import { urlParams } from './utils/urlParams';
 import PlayerTable from './PlayerTable';
 import LeagueSettings from './LeagueSettings';
 
 const positionTables: Array<string> = ["QB", "RB", "WR", "TE", "DEF", "K"];
 const years: Array<number> = [2024, 2022];
+
+console.log(urlParams);
 
 export const App = () => {
   const [year, setYear] = useState<number>(years[0]);
@@ -22,7 +26,7 @@ export const App = () => {
   const queries = useCreateQueries(store, (store) => createQueries(store));
   const indexes = useCreateIndexes(store, (store) => createIndexes(store));
   const persister = useCreatePersister(store, (store) => createLocalPersister(store, 'DraftTool' + year));
-  
+
   const handleYearChange = (event: React.ChangeEvent<HTMLSelectElement>) => { 
     const selectedYear = parseInt(event.target.value);
     setYear(selectedYear);
@@ -31,6 +35,11 @@ export const App = () => {
 
   const handleHidePlayers = (event:React.ChangeEvent<HTMLInputElement>) => {
     setHideDraftedPlayers(event.target.checked)
+  }
+
+  const resetData = () => {
+    localStorage.removeItem(`DraftTool${year}`);
+    location.reload()
   }
 
   // @ts-ignore
@@ -58,6 +67,9 @@ export const App = () => {
             <div className='input-group'>
               <input type='checkbox' id='hide-players' name='hide-players' onChange={handleHidePlayers} checked={hideDraftedPlayers} />
               <label htmlFor='hide-players'>Hide Drafted Players</label>
+            </div>
+            <div className='input-group'>
+              <button className={cn('resetData',{ visible: urlParams.reset == 1})} onClick={resetData}>Reset Data</button>
             </div>
           </div>
         </header>
