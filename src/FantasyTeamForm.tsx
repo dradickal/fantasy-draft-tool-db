@@ -1,60 +1,35 @@
 import { useRef } from "react";
 import type { FantasyTeam } from "./types/LeagueSettings";
+import { InputDelay } from "./utils/inputDelay";
+import TypedUI from "./utils/TypedUI";
+
+const { useSetPartialRowCallback } = TypedUI;
 
 type FantasyTeamFormProps = {
     teamCount: number;
     currentTeam: FantasyTeam;
-    setFantasyTeam: (fantasyTeam:FantasyTeam) => void;
 }
 
-type DelayLabel = string | null;
-type DelayId = number | null;
-
-
-class InputDelay {
-    delay:number
-    timeoutId:DelayId = null;
-    label:DelayLabel = null;
-
-    constructor(delay:number = 1000) {
-        this.delay = delay;
-    }
-
-    startDelay(label:DelayLabel, inputValue:string) {
-        this.label = label;
-        this.timeoutId = setTimeout((v:string, l:string) => {
-            console.log(l, v);
-        }, this.delay, inputValue, label);
-    }
-
-    cancelDelay() {
-        if(this.timeoutId === null) return;
-        clearTimeout(this.timeoutId as number);
-    }
-}
-
-export function FantasyTeamForm({ teamCount, currentTeam, setFantasyTeam }:FantasyTeamFormProps) {
+export function FantasyTeamForm({ teamCount, currentTeam }:FantasyTeamFormProps) {
     const form = useRef<HTMLFormElement>(null);
     const i = currentTeam.order;
-    let activeDelay = new InputDelay(1800);
+    const setFantasyTeam = useSetPartialRowCallback(
+        'teams', 
+        currentTeam.id, 
+        (data:any) => data
+    );
+    let activeDelay = new InputDelay(1800, setFantasyTeam);
 
-    function submitTeamForm(e: React.FormEvent<HTMLFormElement>) {
-        e.preventDefault();
-        const form = e.target as HTMLFormElement;
-        const fantasyTeam = Object.fromEntries(new FormData(form).entries()) as unknown as FantasyTeam;
-        
-    }
-
-    function inputListener(e:any) {
+    function inputListener(e: any) {
         const form = e.currentTarget as HTMLFormElement;
-        const fantasyTeamID = form.dataset.id;
-        const label = `${fantasyTeamID}:${e.target.name}`;
-        
-        if (activeDelay.label === label) {
+        const fantasyTeamID = form.dataset.id as string;
+        const data = Object.fromEntries(new FormData(form));
+
+        if (activeDelay.label === fantasyTeamID) {
             activeDelay.cancelDelay();
         }
 
-        activeDelay.startDelay(label, e.target.value);
+        activeDelay.startDelay(fantasyTeamID, data);
     }
 
     return (
@@ -81,7 +56,6 @@ export function FantasyTeamForm({ teamCount, currentTeam, setFantasyTeam }:Fanta
                 <label htmlFor={`teamOwner${i}`}>Team Owner:</label>
                 <input type="text" id={`teamOwner${i}`} name="owner" defaultValue={currentTeam.owner}/>
             </div>
-            <input type="submit" value="Save Team" />
         </form>
     )
 }

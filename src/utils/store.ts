@@ -1,5 +1,6 @@
-import { createStore } from 'tinybase';
+import { createStore, OptionalSchemas, OptionalTablesSchema } from 'tinybase/with-schemas';
 import { Player, PlayerData } from './dataTypes';
+import { valuesSchema } from './schemas';
 
 const positions = ['QB', 'RB', 'WR', 'TE', 'DEF', 'K'];
 
@@ -37,8 +38,10 @@ function addPlayerProperties(player:PlayerData):Player {
 export function createAndSeedStore(seededCallback:Function, year = new Date().getFullYear()) {
     const store = createStore();
     const localData = localStorage['DraftTool' + year];
+    const typedStore = store.setValuesSchema(valuesSchema);
+
     if(localData) {
-        store.setJson(localData);
+        typedStore.setJson(localData);
         seededCallback();
         console.log('Store is Seeded by localStorage');
     } else {
@@ -47,7 +50,7 @@ export function createAndSeedStore(seededCallback:Function, year = new Date().ge
             for (let player of players) {
                 const playerId = `${pos}${player.rank}`;
                 const sPlayer:any = addPlayerProperties(player);
-                store.setRow(pos, playerId, sPlayer);
+                typedStore.setRow(pos, playerId, sPlayer);
             }
         }).then(() => {
             seededCallback();
@@ -57,7 +60,7 @@ export function createAndSeedStore(seededCallback:Function, year = new Date().ge
     }
 
     // @ts-ignore
-    window.draftStore = store;
+    window.draftStore = typedStore;
     
-    return store;
+    return typedStore;
 }

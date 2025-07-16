@@ -1,8 +1,8 @@
 import { StrictMode, useState } from 'react';
 import cn from "classnames";
-import { Provider, useCreateIndexes, useCreateQueries, useCreateStore, useCreatePersister } from 'tinybase/ui-react';
-import { createIndexes, createQueries } from 'tinybase';
-import { createLocalPersister } from 'tinybase/persisters/persister-browser';
+import TypedUI from "./utils/TypedUI.js";
+import { createIndexes, createQueries } from 'tinybase/with-schemas';
+import { createLocalPersister } from 'tinybase/persisters/persister-browser/with-schemas';
 import { createAndSeedStore } from './utils/store';
 import { PositionTableContext } from './utils/PositionTableContext';
 import { HidePlayersContext } from './utils/HidePlayersContext';
@@ -13,6 +13,7 @@ import LeagueSettings from './LeagueSettings';
 
 const positionTables: Array<string> = ["QB", "RB", "WR", "TE", "DEF", "K"];
 const years: Array<number> = [2024, 2022];
+const { useCreateStore, useCreateIndexes, useCreateQueries, useCreatePersister, Provider } = TypedUI;
 
 const setDebugData = (queries:any, indexes:any) => {
   // @ts-ignore

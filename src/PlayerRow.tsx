@@ -1,12 +1,13 @@
 import cn from "classnames";
 import { Id } from "tinybase";
 import { MouseEvent, useEffect, useState } from "react";
-import { useRow, useSetCellCallback } from "tinybase/ui-react";
 import { usePositionTable } from "./utils/PositionTableContext";
 import { Player } from "./utils/dataTypes";
 import { usePersister } from "./utils/PersisterContext";
 import { useHidePlayers } from "./utils/HidePlayersContext";
+import TypedUI from "./utils/TypedUI";
 
+const { useRow, useSetCellCallback } = TypedUI;
 type PlayerRowProps = {
     rowId: Id;
 }
@@ -43,7 +44,7 @@ export default function PlayerRow({ rowId }: PlayerRowProps) {
     const beenDrafted = async (e:MouseEvent, rowId:string) => {
         console.log('Draft Click', rowId);
         updateDraftedValue(true);
-        await persister.save();
+        await persister?.save();
     }
 
     return player ? (

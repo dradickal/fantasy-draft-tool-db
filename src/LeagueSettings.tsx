@@ -1,53 +1,44 @@
-import { useStore } from "tinybase/ui-react"
-import { useState, useEffect, ReactElement, FormEvent } from "react";
+import TypedUI from "./utils/TypedUI.js";
+import type { Row } from "tinybase";
+import { ReactElement, FormEvent } from "react";
 import { nanoid } from "nanoid";
-import type { LeagueSettings, FantasyTeam } from "./types/LeagueSettings.js";
+import type { FantasyTeam } from "./types/LeagueSettings.js";
+import { usePersister } from "./utils/PersisterContext";
 import { FantasyTeamForm } from "./FantasyTeamForm.js";
 
-function transformFormData(formData: FormData): LeagueSettings {
-    let teams:Array<FantasyTeam> = [];
+const { useStore, useValue } = TypedUI;
 
-
-
-    const data = Object.fromEntries(formData.entries());
-    console.log('Form data: ', data);
-
-    return {
-        teamCount: parseInt(formData.get('teamCount') as string),
-        teams: [],
-    }
-}
 
 export default function LeagueSettings() {
-    const [teamCount, setTeamCount] = useState<number>(10);
-    const [fantasyTeams, setFantasyTeams] = useState<Array<FantasyTeam>>([]);
     const store = useStore();
-    
-    function saveLeagueSettings(e:FormEvent) {
-        e.preventDefault();
-        const form = e.target as HTMLFormElement;
-        const formData = new FormData(form);
-
-        const leagueSettings = transformFormData(formData);
-
-        const newTeamSettings = []; 
-        console.log('Saving team settings: ', formData);
-    }
+    const persister = usePersister();
+    const teamCount = useValue('teamCount');
 
     function teamCountChange(e:React.ChangeEvent<HTMLSelectElement>) {
         const selectedTeamCount = parseInt(e.target.value);
-        setTeamCount(selectedTeamCount);
+        store?.setValue('teamCount', selectedTeamCount);
     }
 
-    function setFantasyTeam(fantasyTeam:FantasyTeam) {
-        
+    async function saveSettings() {
+        await persister?.save();
     }
 
     let teamForms:Array<ReactElement> = [];
-    for(let i = 0; i < teamCount; i++) {
-        const currentTeam = fantasyTeams[i] || {id: nanoid(10), name: '', abbr: '', owner: '', order: i + 1};
+    const fantasyTeamIds = store?.getSortedRowIds('teams', 'order', false) || [];
+    console.log(fantasyTeamIds);
+    fantasyTeamIds.forEach((id) => {
+        const row = store?.getRow('teams', id) as Row;
+        const team = Object.assign(row, { id: id });
+        console.log(team);
         teamForms.push((
-            <FantasyTeamForm key={currentTeam.id} teamCount={teamCount} currentTeam={currentTeam} setFantasyTeam={setFantasyTeam} />         
+            <FantasyTeamForm key={id} teamCount={teamCount} currentTeam={team as FantasyTeam} />         
+        ));
+    });
+
+    for(let i = (fantasyTeamIds.length); i < teamCount; i++) {
+        const newTeam = {id: nanoid(10), name: '', abbr: '', owner: '', order: i + 1} as FantasyTeam;
+        teamForms.push((
+            <FantasyTeamForm key={newTeam.id} teamCount={teamCount} currentTeam={newTeam} />         
         ));
     }
     
@@ -65,6 +56,7 @@ export default function LeagueSettings() {
                     <option value="14">14</option>
                 </select>
                 {teamForms}
+                <button onClick={saveSettings}>Save Settings</button>
             </div>
         </div>
     )

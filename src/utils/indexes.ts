@@ -1,8 +1,10 @@
-import { Indexes } from "tinybase/indexes"
+import { Indexes } from "tinybase/indexes/with-schemas"
+import { NoTablesSchema } from "tinybase/with-schemas";
+import { valuesSchema } from "./schemas";
 
 
 
-export function setTierIndex(indexes: Indexes, indexName:string, posTable: string) {
+export function setTierIndex(indexes: Indexes<[NoTablesSchema, typeof valuesSchema]>, indexName:string, posTable: string) {
     indexes.setIndexDefinition(
         indexName,
         posTable,
@@ -10,7 +12,7 @@ export function setTierIndex(indexes: Indexes, indexName:string, posTable: strin
     ); 
 }
 
-export function setDraftedIndex(indexes: Indexes, indexName:string, posTable: string) {
+export function setDraftedIndex(indexes: Indexes<[NoTablesSchema, typeof valuesSchema]>, indexName:string, posTable: string) {
     indexes.setIndexDefinition(
         indexName,
         posTable,

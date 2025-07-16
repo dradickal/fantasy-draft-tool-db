@@ -1,9 +1,12 @@
-import { useIndexes, useQueries, useSliceIds } from "tinybase/ui-react";
+// import { useIndexes, useQueries, useSliceIds } from "tinybase/ui-react";
 import PlayerTier from "./PlayerTier";;
 import { useEffect } from "react";
 import { usePositionTable } from "./utils/PositionTableContext";
 import { setTierIndex } from "./utils/indexes";
 import { setTierDraftCountQuery } from "./utils/queries";
+import TypedUI from "./utils/TypedUI";
+
+const { useIndexes, useQueries, useSliceIds } = TypedUI;
 
 export default function PlayerTable() {
     const positionTable = usePositionTable();

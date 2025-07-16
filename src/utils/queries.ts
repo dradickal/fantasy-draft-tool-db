@@ -1,11 +1,13 @@
-import { Queries } from "tinybase"
+import { NoTablesSchema, Queries } from "tinybase/with-schemas";
+import { valuesSchema } from "./schemas";
+
 
 
 // Try setting a named select for a second group of drafted count. 
 // Maybe it will hold the row after undrafted becomes zero.
 // This feels safer, and could give access to the additional count.
 
-export function setTierDraftCountQuery(queries: Queries, queryName: string, posTable: string) {
+export function setTierDraftCountQuery(queries: Queries<[NoTablesSchema, typeof valuesSchema]>, queryName: string, posTable: string) {
     return queries.setQueryDefinition(
         queryName,
         posTable,
@@ -22,7 +24,7 @@ export function setTierDraftCountQuery(queries: Queries, queryName: string, posT
 }
 
 
-export function setTieredPlayersQuery(queries: Queries, queryName: string, posTable: string, tier: number) {
+export function setTieredPlayersQuery(queries: Queries<[NoTablesSchema, typeof valuesSchema]>, queryName: string, posTable: string, tier: number) {
     return queries.setQueryDefinition(
         queryName, 
         posTable, 

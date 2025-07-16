@@ -1,6 +1,9 @@
 import PlayerRow from "./PlayerRow";
-import { useResultTable, useSliceRowIds } from "tinybase/ui-react";
+// import { useResultTable, useSliceRowIds } from "tinybase/ui-react";
 import { useEffect, useState } from "react";
+import TypedUI from "./utils/TypedUI";
+
+const { useResultTable, useSliceRowIds } = TypedUI;
 
 type PlayerTierProps = {
     tier: string; // comes from index SliceID
