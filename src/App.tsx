@@ -10,6 +10,7 @@ import { PersisterContext } from './utils/PersisterContext';
 import { urlParams } from './utils/urlParams';
 import PlayerTable from './PlayerTable';
 import LeagueSettings from './LeagueSettings';
+import './app.module.scss';
 
 const positionTables: Array<string> = ["QB", "RB", "WR", "TE", "DEF", "K"];
 const years: Array<number> = [2024, 2022];
@@ -62,14 +63,16 @@ export const App = () => {
             <h1>Fantasy Draft Tool</h1>
           </div>
           <div className='header-tools'>
-            <select id='year-select' name='draft-year' defaultValue={years[0]} onChange={handleYearChange}>
+            <select id='draft-year' className='draft-year' name='draft-year' defaultValue={years[0]} onChange={handleYearChange}>
               {years.map((year) => (
                 <option key={year} value={year}>{year}</option>
               ))}
             </select>
             <div className='input-group'>
-              <input type='checkbox' id='hide-players' name='hide-players' onChange={handleHidePlayers} checked={hideDraftedPlayers} />
-              <label htmlFor='hide-players'>Hide Drafted Players</label>
+              <label className='hide-players' htmlFor='hide-players'>
+                <input type='checkbox' id='hide-players' name='hide-players' onChange={handleHidePlayers} checked={hideDraftedPlayers} />
+                Hide Drafted Players
+              </label>
             </div>
             <div className='input-group'>
               <button className={cn('resetData',{ visible: urlParams.reset == 1})} onClick={resetData}>Reset Data</button>

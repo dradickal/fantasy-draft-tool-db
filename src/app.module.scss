@@ -1,0 +1,61 @@
+header {
+    top: 0;
+    position: sticky;
+    background-color: white;
+    border-bottom: 1px solid;
+    display: flex;
+    padding-left: 2em;
+}
+
+.header-title {
+    display: flex;
+    flex: fit-content;
+}
+.header-icon {
+    width: 60px;
+    padding-right: 1em;
+}
+
+.header-tools {
+    display: flex;
+    align-items: center;
+    flex: fit-content;
+
+    .input-group {
+        margin-left: 1em;
+    }
+
+}
+
+.draft-year {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+    cursor: pointer;
+}
+
+.hide-players {
+    padding: 0.4rem;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgb(143, 143, 157);
+    border-radius: 4px;
+    background-color: rgb(233, 233, 237);
+
+    &:hover {
+        border-color: rgb(103, 103, 116);
+        background-color: rgb(208, 208, 215);
+    }
+
+    input {
+        display: inline-block;
+        margin: 0 .4rem 0 0;
+    }
+}
+
+.resetData {
+    display: none;
+
+    &.visible {
+        display: block;
+    }
+}

@@ -1,4 +1,4 @@
-import { createStore, OptionalSchemas, OptionalTablesSchema } from 'tinybase/with-schemas';
+import { createStore } from 'tinybase/with-schemas';
 import { Player, PlayerData } from './dataTypes';
 import { valuesSchema } from './schemas';
 
@@ -40,6 +40,8 @@ export function createAndSeedStore(seededCallback:Function, year = new Date().ge
     const localData = localStorage['DraftTool' + year];
     const typedStore = store.setValuesSchema(valuesSchema);
 
+    typedStore.setValue('selectedYear', year);
+    
     if(localData) {
         typedStore.setJson(localData);
         seededCallback();

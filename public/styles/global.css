@@ -1,38 +1,5 @@
 a { color: #0070f3; }
 
-header {
-    display: flex;
-    border-bottom: 1px solid;
-    padding-left: 2em;
-}
-
-.header-title {
-    display: flex;
-    flex: fit-content;
-}
-.header-icon {
-    width: 60px;
-    padding-right: 1em;
-}
-
-.header-tools {
-    display: flex;
-    align-items: center;
-    flex: fit-content;
-}
-
-.header-tools .input-group {
-    margin-left: 1em;
-}
-
-.header-tools .resetData {
-    display: none;
-}
-
-.header-tools .resetData.visible {
-    display: block;
-}
-
 .asH1 {
     display: inline-block;
     padding: .6em 0;
