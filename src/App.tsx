@@ -1,4 +1,4 @@
-import { StrictMode, useState } from 'react';
+import { StrictMode, useState, useRef } from 'react';
 import cn from "classnames";
 import TypedUI from "./utils/TypedUI.js";
 import { createIndexes, createQueries } from 'tinybase/with-schemas';
@@ -29,6 +29,7 @@ export const App = () => {
   const [year, setYear] = useState<number>(years[0]);
   const [playersHydrated, setPlayersHydrated] = useState<boolean>(false);
   const [hideDraftedPlayers, setHideDraftedPlayers] = useState<boolean>(true);
+  const dialog = useRef<HTMLDialogElement>(null);
   const store = useCreateStore(() => createAndSeedStore(() => {
     setPlayersHydrated(true);
   }, year), [year]);
@@ -44,6 +45,10 @@ export const App = () => {
 
   const handleHidePlayers = (event:React.ChangeEvent<HTMLInputElement>) => {
     setHideDraftedPlayers(event.target.checked)
+  }
+
+  const openModal = () => {
+    dialog?.current.showModal();
   }
 
   const resetData = () => {
@@ -75,6 +80,9 @@ export const App = () => {
               </label>
             </div>
             <div className='input-group'>
+              <button className='open-settings' onClick={openModal}>Settings</button>
+            </div>
+            <div className='input-group'>
               <button className={cn('resetData',{ visible: urlParams.reset == 1})} onClick={resetData}>Reset Data</button>
             </div>
           </div>
@@ -91,7 +99,9 @@ export const App = () => {
                 </section>
             ))}
           </div>
-          <LeagueSettings />
+          <dialog ref={dialog}>
+            <LeagueSettings />
+          </dialog>
         </div>
       </PersisterContext.Provider>
       </Provider>

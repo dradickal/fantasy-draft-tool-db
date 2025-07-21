@@ -10,6 +10,7 @@ header {
 .header-title {
     display: flex;
     flex: fit-content;
+    flex-grow: 4;
 
     h1 {
         margin: 0.4rem 0;
