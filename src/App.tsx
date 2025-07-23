@@ -99,7 +99,7 @@ export const App = () => {
                 </section>
             ))}
           </div>
-          <dialog ref={dialog}>
+          <dialog className='leagueSettings' ref={dialog}>
             <LeagueSettings />
           </dialog>
         </div>

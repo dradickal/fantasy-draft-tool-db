@@ -1,0 +1,52 @@
+.leagueSettings {
+    height: 90vh;
+    position: fixed;
+    border-color: chocolate;
+
+    h2 {
+        position: fixed;
+        margin: 0;
+        background-color: white;
+        border-bottom: 1px solid chocolate;
+    }
+
+    &::backdrop {
+        opacity: 0.7;
+        background-color: black;
+    }
+}
+
+.leagueSettings-tabs {
+    width: 75vw;
+    display: flex;
+    margin-top: 6%;
+    height: 90%;
+
+    nav {
+        margin-right: 2%;
+        width: 13%;
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &.active {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .leagueSettings-content {
+        width: 85%;
+        overflow: scroll;
+    }
+}
