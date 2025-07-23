@@ -48,7 +48,7 @@ export const App = () => {
   }
 
   const openModal = () => {
-    dialog?.current.showModal();
+    dialog.current?.showModal();
   }
 
   const resetData = () => {
