@@ -49,7 +49,7 @@ export default function PlayerRow({ rowId }: PlayerRowProps) {
 
     return player ? (
         <tr className={cn('player', {visible: showPlayer()})} >
-            <td>{!player.drafted && <button id={`${rowId}`} onClick={(e)=>beenDrafted(e, rowId)}>Draft</button>}</td>
+            <td>{!player.drafted && <button className="draftButton" id={`${rowId}`} onClick={(e)=>beenDrafted(e, rowId)}>Draft</button>}</td>
             <td>{player.rank}</td>
             <td className={cn('playerNameCol', {drafted: player.drafted})}>{player.playerName}</td>
             <td>{player.team}</td>

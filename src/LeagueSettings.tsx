@@ -21,10 +21,16 @@ export default function LeagueSettings() {
         return selectedTab === tabName ? 'active' : '';
     }
 
+    async function saveSettings() {
+        await persister?.save();
+    }
+
     return (
-        <>
-            <h2>League Settings</h2>
-            <section className="leagueSettings-tabs">
+        <section>
+            <header>
+                <h2>League Settings</h2>
+            </header>
+            <div className="leagueSettings-tabs">
                 <nav>
                     <ul>
                         <li className={isActive('teams')} onClick={() => setSelectedTab('teams')}>Fantasy Teams</li>
@@ -32,7 +38,10 @@ export default function LeagueSettings() {
                     </ul>
                 </nav>
                 {TABS[selectedTab]}
-            </section>
-        </>
+            </div>
+            <footer>
+                <button onClick={saveSettings}>Save Settings</button>
+            </footer>
+        </section>
     )
 }

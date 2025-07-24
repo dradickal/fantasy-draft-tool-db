@@ -19,10 +19,6 @@ export default function FantasyTeams() {
         store?.setValue('teamCount', selectedTeamCount);
     }
 
-    async function saveSettings() {
-        await persister?.save();
-    }
-
     let teamForms:Array<ReactElement> = [];
     const fantasyTeamIds = store?.getSortedRowIds('teams', 'order', false) || [];
     console.log(fantasyTeamIds);
@@ -42,7 +38,6 @@ export default function FantasyTeams() {
         ));
     }
     
-
     return (
         <div className="leagueSettings-content fantasyTeams">
             <label htmlFor="teamCount">Number of Teams:</label>
@@ -54,7 +49,6 @@ export default function FantasyTeams() {
                 <option value="14">14</option>
             </select>
             {teamForms}
-            <button onClick={saveSettings}>Save Settings</button>
         </div>
     );
 }
