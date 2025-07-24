@@ -4,7 +4,7 @@ export interface Player extends PlayerData {
 }
 
 export interface PlayerData {
-    prefferred: number;
+    preferred: number;
     tier: number;
     rank: number;
     playerName: string;

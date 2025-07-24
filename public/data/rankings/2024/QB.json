@@ -1,7 +1,7 @@
 {
   "players": [
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 1,
       "rank": 1,
       "playerName": "Jalen Hurts",
@@ -10,7 +10,7 @@
       "adp": "QB2"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 1,
       "rank": 2,
       "playerName": "Josh Allen",
@@ -19,7 +19,7 @@
       "adp": "QB1"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 1,
       "rank": 3,
       "playerName": "Patrick Mahomes",
@@ -28,7 +28,7 @@
       "adp": "QB3"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 1,
       "rank": 4,
       "playerName": "Lamar Jackson",
@@ -37,7 +37,7 @@
       "adp": "QB4"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 5,
       "playerName": "Dak Prescott",
@@ -46,7 +46,7 @@
       "adp": "QB10"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 6,
       "playerName": "Joe Burrow",
@@ -55,7 +55,7 @@
       "adp": "QB7"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 7,
       "playerName": "Anthony Richardson",
@@ -64,7 +64,7 @@
       "adp": "QB6"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 8,
       "playerName": "Kyler Murray",
@@ -73,7 +73,7 @@
       "adp": "QB9"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 9,
       "playerName": "C.J. Stroud",
@@ -82,7 +82,7 @@
       "adp": "QB5"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 10,
       "playerName": "Brock Purdy",
@@ -91,7 +91,7 @@
       "adp": "QB11"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 11,
       "playerName": "Jordan Love",
@@ -100,7 +100,7 @@
       "adp": "QB8"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 12,
       "playerName": "Trevor Lawrence",
@@ -109,7 +109,7 @@
       "adp": "QB17"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 13,
       "playerName": "Jared Goff",
@@ -118,7 +118,7 @@
       "adp": "QB14"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 14,
       "playerName": "Tua Tagovailoa",
@@ -127,7 +127,7 @@
       "adp": "QB13"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 15,
       "playerName": "Caleb Williams",
@@ -136,7 +136,7 @@
       "adp": "QB12"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 16,
       "playerName": "Jayden Daniels",
@@ -145,7 +145,7 @@
       "adp": "QB15"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 17,
       "playerName": "Deshaun Watson",
@@ -154,7 +154,7 @@
       "adp": "QB22"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 18,
       "playerName": "Baker Mayfield",
@@ -163,7 +163,7 @@
       "adp": "QB21"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 19,
       "playerName": "Justin Herbert",
@@ -172,7 +172,7 @@
       "adp": "QB16"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 20,
       "playerName": "Kirk Cousins",
@@ -181,7 +181,7 @@
       "adp": "QB18"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 21,
       "playerName": "Aaron Rodgers",
@@ -190,7 +190,7 @@
       "adp": "QB19"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 22,
       "playerName": "Matthew Stafford",
@@ -199,7 +199,7 @@
       "adp": "QB20"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 23,
       "playerName": "Will Levis",
@@ -208,7 +208,7 @@
       "adp": "QB23"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 24,
       "playerName": "Geno Smith",
@@ -217,7 +217,7 @@
       "adp": "QB24"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 25,
       "playerName": "Sam Darnold",
@@ -226,7 +226,7 @@
       "adp": "QB33"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 26,
       "playerName": "Derek Carr",
@@ -235,7 +235,7 @@
       "adp": "QB28"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 27,
       "playerName": "Daniel Jones",
@@ -244,7 +244,7 @@
       "adp": "QB26"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 28,
       "playerName": "Bryce Young",
@@ -253,7 +253,7 @@
       "adp": "QB27"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 29,
       "playerName": "Bo Nix",
@@ -262,7 +262,7 @@
       "adp": "QB29"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 30,
       "playerName": "Russell Wilson",
@@ -271,7 +271,7 @@
       "adp": "QB30"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 31,
       "playerName": "Drake Maye",
@@ -280,7 +280,7 @@
       "adp": "QB31"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 32,
       "playerName": "Gardner Minshew",
@@ -289,7 +289,7 @@
       "adp": "QB32"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 33,
       "playerName": "Justin Fields",
@@ -298,7 +298,7 @@
       "adp": "QB25"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 34,
       "playerName": "Aidan O'Connell",
@@ -307,7 +307,7 @@
       "adp": "QB35"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 35,
       "playerName": "Jacoby Brissett",
@@ -316,7 +316,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 36,
       "playerName": "Sam Howell",
@@ -325,7 +325,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 37,
       "playerName": "Drew Lock",
@@ -334,7 +334,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 38,
       "playerName": "Jarrett Stidham",
@@ -343,7 +343,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 39,
       "playerName": "Joe Flacco",
@@ -352,7 +352,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 40,
       "playerName": "Jake Browning",
@@ -361,7 +361,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 41,
       "playerName": "Desmond Ridder",
@@ -370,7 +370,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 42,
       "playerName": "Tyson Bagent",
@@ -379,7 +379,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 43,
       "playerName": "Jimmy Garoppolo",
@@ -388,7 +388,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 44,
       "playerName": "Jameis Winston",
@@ -397,7 +397,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 45,
       "playerName": "Tyrod Taylor",
@@ -406,7 +406,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 46,
       "playerName": "Nick Mullens",
@@ -415,7 +415,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 47,
       "playerName": "Mason Rudolph",
@@ -424,7 +424,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 48,
       "playerName": "Marcus Mariota",
@@ -433,7 +433,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 49,
       "playerName": "Sean Clifford",
@@ -442,7 +442,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 50,
       "playerName": "Case Keenum",
@@ -451,7 +451,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 51,
       "playerName": "Easton Stick",
@@ -460,7 +460,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 52,
       "playerName": "Joshua Dobbs",
@@ -469,7 +469,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 53,
       "playerName": "Michael Penix Jr.",
@@ -478,7 +478,7 @@
       "adp": "QB34"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 54,
       "playerName": "Mac Jones",
@@ -487,7 +487,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 55,
       "playerName": "Kenny Pickett",
@@ -496,7 +496,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 56,
       "playerName": "Josh Johnson",
@@ -505,7 +505,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 57,
       "playerName": "Mitchell Trubisky",
@@ -514,7 +514,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 58,
       "playerName": "Kyle Trask",
@@ -523,7 +523,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 59,
       "playerName": "Cooper Rush",
@@ -532,7 +532,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 60,
       "playerName": "Carson Wentz",
@@ -541,7 +541,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 61,
       "playerName": "Mike White",
@@ -550,7 +550,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 62,
       "playerName": "Andy Dalton",
@@ -559,7 +559,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 63,
       "playerName": "Hendon Hooker",

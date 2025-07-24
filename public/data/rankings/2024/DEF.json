@@ -1,7 +1,7 @@
 { 
   "players" : [
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 1,
       "rank": 1,
       "playerName": "Dallas Cowboys",
@@ -10,7 +10,7 @@
       "adp": "DEF3"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 1,
       "rank": 2,
       "playerName": "Baltimore Ravens",
@@ -19,7 +19,7 @@
       "adp": "DEF4"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 3,
       "playerName": "New York Jets",
@@ -28,7 +28,7 @@
       "adp": "DEF1"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 4,
       "playerName": "Kansas City Chiefs",
@@ -37,7 +37,7 @@
       "adp": "DEF9"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 5,
       "playerName": "San Francisco 49ers",
@@ -46,7 +46,7 @@
       "adp": "DEF2"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 6,
       "playerName": "Cleveland Browns",
@@ -55,7 +55,7 @@
       "adp": "DEF5"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 7,
       "playerName": "Buffalo Bills",
@@ -64,7 +64,7 @@
       "adp": "DEF10"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 8,
       "playerName": "Houston Texans",
@@ -73,7 +73,7 @@
       "adp": "DEF12"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 9,
       "playerName": "Minnesota Vikings",
@@ -82,7 +82,7 @@
       "adp": "DEF24"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 10,
       "playerName": "Pittsburgh Steelers",
@@ -91,7 +91,7 @@
       "adp": "DEF6"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 11,
       "playerName": "Jacksonville Jaguars",
@@ -100,7 +100,7 @@
       "adp": "DEF21"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 12,
       "playerName": "Miami Dolphins",
@@ -109,7 +109,7 @@
       "adp": "DEF8"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 13,
       "playerName": "Philadelphia Eagles",
@@ -118,7 +118,7 @@
       "adp": "DEF11"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 14,
       "playerName": "Indianapolis Colts",
@@ -127,7 +127,7 @@
       "adp": "DEF22"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 15,
       "playerName": "Las Vegas Raiders",
@@ -136,7 +136,7 @@
       "adp": "DEF13"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 16,
       "playerName": "New England Patriots",
@@ -145,7 +145,7 @@
       "adp": "DEF17"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 17,
       "playerName": "New Orleans Saints",
@@ -154,7 +154,7 @@
       "adp": "DEF15"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 18,
       "playerName": "Green Bay Packers",
@@ -163,7 +163,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 19,
       "playerName": "Chicago Bears",
@@ -172,7 +172,7 @@
       "adp": "DEF23"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 20,
       "playerName": "Denver Broncos",
@@ -181,7 +181,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 21,
       "playerName": "New York Giants",
@@ -190,7 +190,7 @@
       "adp": "DEF19"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 22,
       "playerName": "Seattle Seahawks",
@@ -199,7 +199,7 @@
       "adp": "DEF16"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 23,
       "playerName": "Los Angeles Chargers",
@@ -208,7 +208,7 @@
       "adp": "DEF25"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 24,
       "playerName": "Cincinnati Bengals",
@@ -217,7 +217,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 25,
       "playerName": "Tampa Bay Buccaneers",
@@ -226,7 +226,7 @@
       "adp": "DEF14"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 26,
       "playerName": "Detroit Lions",
@@ -235,7 +235,7 @@
       "adp": "DEF20"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 27,
       "playerName": "Los Angeles Rams",
@@ -244,7 +244,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 28,
       "playerName": "Washington Commanders",
@@ -253,7 +253,7 @@
       "adp": "DEF7"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 29,
       "playerName": "Arizona Cardinals",
@@ -262,7 +262,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 30,
       "playerName": "Atlanta Falcons",
@@ -271,7 +271,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 31,
       "playerName": "Tennessee Titans",
@@ -280,7 +280,7 @@
       "adp": "DEF18"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 32,
       "playerName": "Carolina Panthers",

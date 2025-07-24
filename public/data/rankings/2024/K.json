@@ -1,7 +1,7 @@
 {
   "players": [
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 1,
       "rank": 1,
       "playerName": "Brandon Aubrey",
@@ -10,7 +10,7 @@
       "adp": "K2"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 1,
       "rank": 2,
       "playerName": "Justin Tucker",
@@ -19,7 +19,7 @@
       "adp": "K1"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 3,
       "playerName": "Younghoe Koo",
@@ -28,7 +28,7 @@
       "adp": "K7"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 4,
       "playerName": "Harrison Butker",
@@ -37,7 +37,7 @@
       "adp": "K3"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 5,
       "playerName": "Jason Myers",
@@ -46,7 +46,7 @@
       "adp": "K12"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 6,
       "playerName": "Greg Zuerlein",
@@ -55,7 +55,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 7,
       "playerName": "Blake Grupe",
@@ -64,7 +64,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 8,
       "playerName": "Cameron Dicker",
@@ -73,7 +73,7 @@
       "adp": "K11"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 9,
       "playerName": "Jake Elliott",
@@ -82,7 +82,7 @@
       "adp": "K4"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 10,
       "playerName": "Matt Gay",
@@ -91,7 +91,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 11,
       "playerName": "Tyler Bass",
@@ -100,7 +100,7 @@
       "adp": "K8"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 12,
       "playerName": "Ka'imi Fairbairn",
@@ -109,7 +109,7 @@
       "adp": "K6"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 13,
       "playerName": "Matt Prater",
@@ -118,7 +118,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 14,
       "playerName": "Jason Sanders",
@@ -127,7 +127,7 @@
       "adp": "K10"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 15,
       "playerName": "Jake Moody",
@@ -136,7 +136,7 @@
       "adp": "K5"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 16,
       "playerName": "Chris Boswell",
@@ -145,7 +145,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 17,
       "playerName": "Evan McPherson",
@@ -154,7 +154,7 @@
       "adp": "K9"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 18,
       "playerName": "Anders Carlson",
@@ -163,7 +163,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 19,
       "playerName": "Chase McLaughlin",
@@ -172,7 +172,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 20,
       "playerName": "Jake Bates",
@@ -181,7 +181,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 21,
       "playerName": "Nick Folk",
@@ -190,7 +190,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 22,
       "playerName": "Cairo Santos",
@@ -199,7 +199,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 23,
       "playerName": "Daniel Carlson",
@@ -208,7 +208,7 @@
       "adp": "K13"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 24,
       "playerName": "Joshua Karty",
@@ -217,7 +217,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 25,
       "playerName": "Cam Little",
@@ -226,7 +226,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 26,
       "playerName": "Dustin Hopkins",
@@ -235,7 +235,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 27,
       "playerName": "Will Reichard",
@@ -244,7 +244,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 28,
       "playerName": "Graham Gano",
@@ -253,7 +253,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 29,
       "playerName": "Wil Lutz",
@@ -262,7 +262,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 30,
       "playerName": "Chad Ryland",
@@ -271,7 +271,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 31,
       "playerName": "Cade York",
@@ -280,7 +280,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 32,
       "playerName": "Eddy Pineiro",

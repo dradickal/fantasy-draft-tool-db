@@ -31,7 +31,7 @@ export function setTieredPlayersQuery(queries: Queries<[NoTablesSchema, typeof v
         ({select, where}) => {
             select('playerId');
             select('drafted');
-            select('prefferred');
+            select('preferred');
             select('rank');
             select('playerName');
             select('team');

@@ -1,7 +1,7 @@
 {
   "players": [
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 1,
       "rank": 1,
       "playerName": "Tyreek Hill",
@@ -10,7 +10,7 @@
       "adp": "WR2"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 1,
       "rank": 2,
       "playerName": "CeeDee Lamb",
@@ -19,7 +19,7 @@
       "adp": "WR1"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 1,
       "rank": 3,
       "playerName": "Justin Jefferson",
@@ -28,7 +28,7 @@
       "adp": "WR3"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 1,
       "rank": 4,
       "playerName": "Ja'Marr Chase",
@@ -37,7 +37,7 @@
       "adp": "WR4"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 1,
       "rank": 5,
       "playerName": "Amon-Ra St. Brown",
@@ -46,7 +46,7 @@
       "adp": "WR5"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 6,
       "playerName": "A.J. Brown",
@@ -55,7 +55,7 @@
       "adp": "WR6"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 7,
       "playerName": "Puka Nacua",
@@ -64,7 +64,7 @@
       "adp": "WR8"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 8,
       "playerName": "Davante Adams",
@@ -73,7 +73,7 @@
       "adp": "WR9"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 9,
       "playerName": "Garrett Wilson",
@@ -82,7 +82,7 @@
       "adp": "WR7"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 10,
       "playerName": "Chris Olave",
@@ -91,7 +91,7 @@
       "adp": "WR11"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 11,
       "playerName": "Mike Evans",
@@ -100,7 +100,7 @@
       "adp": "WR15"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 12,
       "playerName": "Drake London",
@@ -109,7 +109,7 @@
       "adp": "WR12"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 13,
       "playerName": "Brandon Aiyuk",
@@ -118,7 +118,7 @@
       "adp": "WR18"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 14,
       "playerName": "DeVonta Smith",
@@ -127,7 +127,7 @@
       "adp": "WR23"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 15,
       "playerName": "Michael Pittman Jr.",
@@ -136,7 +136,7 @@
       "adp": "WR13"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 16,
       "playerName": "Marvin Harrison Jr.",
@@ -145,7 +145,7 @@
       "adp": "WR10"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 17,
       "playerName": "Deebo Samuel",
@@ -154,7 +154,7 @@
       "adp": "WR17"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 18,
       "playerName": "DK Metcalf",
@@ -163,7 +163,7 @@
       "adp": "WR19"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 19,
       "playerName": "Malik Nabers",
@@ -172,7 +172,7 @@
       "adp": "WR24"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 20,
       "playerName": "Nico Collins",
@@ -181,7 +181,7 @@
       "adp": "WR14"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 21,
       "playerName": "George Pickens",
@@ -190,7 +190,7 @@
       "adp": "WR26"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 22,
       "playerName": "Jaylen Waddle",
@@ -199,7 +199,7 @@
       "adp": "WR21"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 23,
       "playerName": "Zay Flowers",
@@ -208,7 +208,7 @@
       "adp": "WR25"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 24,
       "playerName": "Cooper Kupp",
@@ -217,7 +217,7 @@
       "adp": "WR20"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 25,
       "playerName": "Stefon Diggs",
@@ -226,7 +226,7 @@
       "adp": "WR16"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 26,
       "playerName": "Chris Godwin",
@@ -235,7 +235,7 @@
       "adp": "WR31"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 27,
       "playerName": "Rashee Rice",
@@ -244,7 +244,7 @@
       "adp": "WR35"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 28,
       "playerName": "Amari Cooper",
@@ -253,7 +253,7 @@
       "adp": "WR27"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 29,
       "playerName": "Christian Kirk",
@@ -262,7 +262,7 @@
       "adp": "WR34"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 30,
       "playerName": "D.J. Moore",
@@ -271,7 +271,7 @@
       "adp": "WR22"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 31,
       "playerName": "Calvin Ridley",
@@ -280,7 +280,7 @@
       "adp": "WR33"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 32,
       "playerName": "Diontae Johnson",
@@ -289,7 +289,7 @@
       "adp": "WR37"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 33,
       "playerName": "Tee Higgins",
@@ -298,7 +298,7 @@
       "adp": "WR28"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 34,
       "playerName": "Jayden Reed",
@@ -307,7 +307,7 @@
       "adp": "WR36"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 35,
       "playerName": "Terry McLaurin",
@@ -316,7 +316,7 @@
       "adp": "WR32"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 36,
       "playerName": "Tank Dell",
@@ -325,7 +325,7 @@
       "adp": "WR29"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 37,
       "playerName": "Jordan Addison",
@@ -334,7 +334,7 @@
       "adp": "WR39"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 38,
       "playerName": "DeAndre Hopkins",
@@ -343,7 +343,7 @@
       "adp": "WR40"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 39,
       "playerName": "Keenan Allen",
@@ -352,7 +352,7 @@
       "adp": "WR30"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 40,
       "playerName": "Jaxon Smith-Njigba",
@@ -361,7 +361,7 @@
       "adp": "WR43"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 41,
       "playerName": "Courtland Sutton",
@@ -370,7 +370,7 @@
       "adp": "WR47"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 42,
       "playerName": "Xavier Worthy",
@@ -379,7 +379,7 @@
       "adp": "WR38"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 43,
       "playerName": "Ladd McConkey",
@@ -388,7 +388,7 @@
       "adp": "WR44"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 44,
       "playerName": "Tyler Lockett",
@@ -397,7 +397,7 @@
       "adp": "WR51"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 45,
       "playerName": "Brandin Cooks",
@@ -406,7 +406,7 @@
       "adp": "WR59"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 46,
       "playerName": "Christian Watson",
@@ -415,7 +415,7 @@
       "adp": "WR42"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 47,
       "playerName": "Josh Palmer",
@@ -424,7 +424,7 @@
       "adp": "WR58"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 48,
       "playerName": "Jameson Williams",
@@ -433,7 +433,7 @@
       "adp": "WR48"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 49,
       "playerName": "Marquise Brown",
@@ -442,7 +442,7 @@
       "adp": "WR41"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 50,
       "playerName": "Rome Odunze",
@@ -451,7 +451,7 @@
       "adp": "WR45"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 51,
       "playerName": "Jakobi Meyers",
@@ -460,7 +460,7 @@
       "adp": "WR53"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 52,
       "playerName": "Curtis Samuel",
@@ -469,7 +469,7 @@
       "adp": "WR50"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 53,
       "playerName": "Jerry Jeudy",
@@ -478,7 +478,7 @@
       "adp": "WR52"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 54,
       "playerName": "Rashid Shaheed",
@@ -487,7 +487,7 @@
       "adp": "WR57"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 55,
       "playerName": "Adam Thielen",
@@ -496,7 +496,7 @@
       "adp": "WR63"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 56,
       "playerName": "Keon Coleman",
@@ -505,7 +505,7 @@
       "adp": "WR46"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 57,
       "playerName": "Romeo Doubs",
@@ -514,7 +514,7 @@
       "adp": "WR55"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 58,
       "playerName": "Jahan Dotson",
@@ -523,7 +523,7 @@
       "adp": "WR68"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 59,
       "playerName": "Demario Douglas",
@@ -532,7 +532,7 @@
       "adp": "WR69"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 60,
       "playerName": "Brian Thomas Jr.",
@@ -541,7 +541,7 @@
       "adp": "WR49"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 61,
       "playerName": "Darnell Mooney",
@@ -550,7 +550,7 @@
       "adp": "WR65"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 62,
       "playerName": "Khalil Shakir",
@@ -559,7 +559,7 @@
       "adp": "WR54"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 63,
       "playerName": "Ja'Lynn Polk",
@@ -568,7 +568,7 @@
       "adp": "WR70"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 64,
       "playerName": "Gabe Davis",
@@ -577,7 +577,7 @@
       "adp": "WR61"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 65,
       "playerName": "Josh Downs",
@@ -586,7 +586,7 @@
       "adp": "WR60"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 66,
       "playerName": "Wan'Dale Robinson",
@@ -595,7 +595,7 @@
       "adp": "WR75"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 67,
       "playerName": "Kendrick Bourne",
@@ -604,7 +604,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 68,
       "playerName": "Demarcus Robinson",
@@ -613,7 +613,7 @@
       "adp": "WR79"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 69,
       "playerName": "Mike Williams",
@@ -622,7 +622,7 @@
       "adp": "WR56"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 70,
       "playerName": "Michael Wilson",
@@ -631,7 +631,7 @@
       "adp": "WR67"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 71,
       "playerName": "Tim Patrick",
@@ -640,7 +640,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 72,
       "playerName": "Darius Slayton",
@@ -649,7 +649,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 73,
       "playerName": "Elijah Moore",
@@ -658,7 +658,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 74,
       "playerName": "Rashod Bateman",
@@ -667,7 +667,7 @@
       "adp": "WR77"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 75,
       "playerName": "D.J. Chark",
@@ -676,7 +676,7 @@
       "adp": "WR85"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 76,
       "playerName": "Jalen Tolbert",
@@ -685,7 +685,7 @@
       "adp": "WR87"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 77,
       "playerName": "Adonai Mitchell",
@@ -694,7 +694,7 @@
       "adp": "WR64"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 78,
       "playerName": "Dontayvion Wicks",
@@ -703,7 +703,7 @@
       "adp": "WR66"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 79,
       "playerName": "Tyler Boyd",
@@ -712,7 +712,7 @@
       "adp": "WR82"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 80,
       "playerName": "Jermaine Burton",
@@ -721,7 +721,7 @@
       "adp": "WR73"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 81,
       "playerName": "Marvin Mims",
@@ -730,7 +730,7 @@
       "adp": "WR76"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 82,
       "playerName": "Xavier Legette",
@@ -739,7 +739,7 @@
       "adp": "WR62"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 83,
       "playerName": "Zay Jones",
@@ -748,7 +748,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 8,
       "rank": 84,
       "playerName": "Jalen McMillan",
@@ -757,7 +757,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 85,
       "playerName": "Ricky Pearsall",
@@ -766,7 +766,7 @@
       "adp": "WR74"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 86,
       "playerName": "Greg Dortch",
@@ -775,7 +775,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 87,
       "playerName": "Quentin Johnston",
@@ -784,7 +784,7 @@
       "adp": "WR71"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 88,
       "playerName": "Andrei Iosivas",
@@ -793,7 +793,7 @@
       "adp": "WR84"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 89,
       "playerName": "Odell Beckham Jr.",
@@ -802,7 +802,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 90,
       "playerName": "Mack Hollins",
@@ -811,7 +811,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 91,
       "playerName": "Ray-Ray McCloud",
@@ -820,7 +820,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 92,
       "playerName": "Tre Tucker",
@@ -829,7 +829,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 93,
       "playerName": "Kalif Raymond",
@@ -838,7 +838,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 94,
       "playerName": "Jamison Crowder",
@@ -847,7 +847,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 95,
       "playerName": "Van Jefferson",
@@ -856,7 +856,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 96,
       "playerName": "Calvin Austin",
@@ -865,7 +865,7 @@
       "adp": "WR81"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 97,
       "playerName": "Trey Palmer",
@@ -874,7 +874,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 98,
       "playerName": "Malachi Corley",
@@ -883,7 +883,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 99,
       "playerName": "Nelson Agholor",
@@ -892,7 +892,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 100,
       "playerName": "Noah Brown",
@@ -901,7 +901,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 101,
       "playerName": "Jalin Hyatt",
@@ -910,7 +910,7 @@
       "adp": "WR88"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 102,
       "playerName": "Xavier Gipson",
@@ -919,7 +919,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 103,
       "playerName": "Roman Wilson",
@@ -928,7 +928,7 @@
       "adp": "WR78"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 104,
       "playerName": "K.J. Osborn",
@@ -937,7 +937,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 105,
       "playerName": "Treylon Burks",
@@ -946,7 +946,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 106,
       "playerName": "Tutu Atwell",
@@ -955,7 +955,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 107,
       "playerName": "Donovan Peoples-Jones",
@@ -964,7 +964,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 108,
       "playerName": "KaVontae Turpin",
@@ -973,7 +973,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 109,
       "playerName": "Josh Reynolds",
@@ -982,7 +982,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 110,
       "playerName": "Marquez Valdes-Scantling",
@@ -991,7 +991,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 111,
       "playerName": "Braxton Berrios",
@@ -1000,7 +1000,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 112,
       "playerName": "Justin Watson",
@@ -1009,7 +1009,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 113,
       "playerName": "Jalen Nailor",
@@ -1018,7 +1018,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 114,
       "playerName": "Luke McCaffrey",
@@ -1027,7 +1027,7 @@
       "adp": "WR80"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 115,
       "playerName": "Parris Campbell",
@@ -1036,7 +1036,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 116,
       "playerName": "Jauan Jennings",
@@ -1045,7 +1045,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 117,
       "playerName": "Alec Pierce",
@@ -1054,7 +1054,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 118,
       "playerName": "Devin Duvernay",
@@ -1063,7 +1063,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 119,
       "playerName": "Bub Means",
@@ -1072,7 +1072,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 120,
       "playerName": "Trent Sherfield",
@@ -1081,7 +1081,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 121,
       "playerName": "Tyler Scott",
@@ -1090,7 +1090,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 122,
       "playerName": "Jonathan Mingo",
@@ -1099,7 +1099,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 123,
       "playerName": "Troy Franklin",
@@ -1108,7 +1108,7 @@
       "adp": "WR72"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 124,
       "playerName": "Cedric Tillman",
@@ -1117,7 +1117,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 125,
       "playerName": "A.T. Perry",
@@ -1126,7 +1126,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 126,
       "playerName": "Cedrick Wilson",
@@ -1135,7 +1135,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 127,
       "playerName": "Jalen Reagor",
@@ -1144,7 +1144,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 128,
       "playerName": "Jake Bobo",
@@ -1153,7 +1153,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 129,
       "playerName": "Skyy Moore",
@@ -1162,7 +1162,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 130,
       "playerName": "Devontez Walker",
@@ -1171,7 +1171,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 131,
       "playerName": "Allen Lazard",
@@ -1180,7 +1180,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 132,
       "playerName": "Bo Melton",
@@ -1189,7 +1189,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 133,
       "playerName": "Jordan Whittington",
@@ -1198,7 +1198,7 @@
       "adp": "WR86"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 134,
       "playerName": "Trenton Irwin",
@@ -1207,7 +1207,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 135,
       "playerName": "Ainias Smith",
@@ -1216,7 +1216,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 136,
       "playerName": "Parker Washington",
@@ -1225,7 +1225,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 137,
       "playerName": "Nick Westbrook-Ikhine",
@@ -1234,7 +1234,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 138,
       "playerName": "Dyami Brown",
@@ -1243,7 +1243,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 9,
       "rank": 139,
       "playerName": "Malik Washington",

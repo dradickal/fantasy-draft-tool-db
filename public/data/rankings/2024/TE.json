@@ -1,7 +1,7 @@
 {
   "players": [
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 1,
       "rank": 1,
       "playerName": "Travis Kelce",
@@ -10,7 +10,7 @@
       "adp": "TE1"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 1,
       "rank": 2,
       "playerName": "Sam LaPorta",
@@ -19,7 +19,7 @@
       "adp": "TE2"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 1,
       "rank": 3,
       "playerName": "Trey McBride",
@@ -28,7 +28,7 @@
       "adp": "TE4"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 1,
       "rank": 4,
       "playerName": "Mark Andrews",
@@ -37,7 +37,7 @@
       "adp": "TE3"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 1,
       "rank": 5,
       "playerName": "Evan Engram",
@@ -46,7 +46,7 @@
       "adp": "TE8"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 1,
       "rank": 6,
       "playerName": "George Kittle",
@@ -55,7 +55,7 @@
       "adp": "TE6"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 7,
       "playerName": "Dalton Kincaid",
@@ -64,7 +64,7 @@
       "adp": "TE5"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 8,
       "playerName": "Jake Ferguson",
@@ -73,7 +73,7 @@
       "adp": "TE10"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 2,
       "rank": 9,
       "playerName": "Kyle Pitts",
@@ -82,7 +82,7 @@
       "adp": "TE7"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 10,
       "playerName": "David Njoku",
@@ -91,7 +91,7 @@
       "adp": "TE9"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 11,
       "playerName": "Brock Bowers",
@@ -100,7 +100,7 @@
       "adp": "TE11"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 12,
       "playerName": "Pat Freiermuth",
@@ -109,7 +109,7 @@
       "adp": "TE15"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 13,
       "playerName": "T.J. Hockenson",
@@ -118,7 +118,7 @@
       "adp": "TE13"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 14,
       "playerName": "Dallas Goedert",
@@ -127,7 +127,7 @@
       "adp": "TE12"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 3,
       "rank": 15,
       "playerName": "Dalton Schultz",
@@ -136,7 +136,7 @@
       "adp": "TE14"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 16,
       "playerName": "Taysom Hill",
@@ -145,7 +145,7 @@
       "adp": "TE18"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 17,
       "playerName": "Cole Kmet",
@@ -154,7 +154,7 @@
       "adp": "TE16"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 18,
       "playerName": "Tyler Conklin",
@@ -163,7 +163,7 @@
       "adp": "TE20"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 19,
       "playerName": "Cade Otton",
@@ -172,7 +172,7 @@
       "adp": "TE22"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 20,
       "playerName": "Chigoziem Okonkwo",
@@ -181,7 +181,7 @@
       "adp": "TE23"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 21,
       "playerName": "Daniel Bellinger",
@@ -190,7 +190,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 22,
       "playerName": "Hunter Henry",
@@ -199,7 +199,7 @@
       "adp": "TE19"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 23,
       "playerName": "Noah Fant",
@@ -208,7 +208,7 @@
       "adp": "TE25"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 24,
       "playerName": "Hayden Hurst",
@@ -217,7 +217,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 4,
       "rank": 25,
       "playerName": "Luke Musgrave",
@@ -226,7 +226,7 @@
       "adp": "TE17"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 26,
       "playerName": "Mike Gesicki",
@@ -235,7 +235,7 @@
       "adp": "TE26"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 27,
       "playerName": "Isaiah Likely",
@@ -244,7 +244,7 @@
       "adp": "TE21"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 28,
       "playerName": "Jonnu Smith",
@@ -253,7 +253,7 @@
       "adp": "TE29"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 29,
       "playerName": "Ja'Tavion Sanders",
@@ -262,7 +262,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 30,
       "playerName": "Colby Parkinson",
@@ -271,7 +271,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 31,
       "playerName": "Juwan Johnson",
@@ -280,7 +280,7 @@
       "adp": "TE27"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 32,
       "playerName": "Greg Dulcich",
@@ -289,7 +289,7 @@
       "adp": "TE30"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 33,
       "playerName": "Tucker Kraft",
@@ -298,7 +298,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 34,
       "playerName": "Zach Ertz",
@@ -307,7 +307,7 @@
       "adp": "TE31"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 5,
       "rank": 35,
       "playerName": "Michael Mayer",
@@ -316,7 +316,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 36,
       "playerName": "Mo Alie-Cox",
@@ -325,7 +325,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 37,
       "playerName": "Tommy Tremble",
@@ -334,7 +334,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 38,
       "playerName": "Tyler Higbee",
@@ -343,7 +343,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 39,
       "playerName": "Noah Gray",
@@ -352,7 +352,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 40,
       "playerName": "Ben Sinnott",
@@ -361,7 +361,7 @@
       "adp": "TE24"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 41,
       "playerName": "Kylen Granson",
@@ -370,7 +370,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 42,
       "playerName": "Gerald Everett",
@@ -379,7 +379,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 43,
       "playerName": "Will Dissly",
@@ -388,7 +388,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 44,
       "playerName": "Jeremy Ruckert",
@@ -397,7 +397,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 45,
       "playerName": "Tanner Hudson",
@@ -406,7 +406,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 46,
       "playerName": "Theo Johnson",
@@ -415,7 +415,7 @@
       "adp": "TE28"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 6,
       "rank": 47,
       "playerName": "Dawson Knox",
@@ -424,7 +424,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 48,
       "playerName": "Connor Heyward",
@@ -433,7 +433,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 49,
       "playerName": "Austin Hooper",
@@ -442,7 +442,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 50,
       "playerName": "Brevin Jordan",
@@ -451,7 +451,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 51,
       "playerName": "Jordan Akins",
@@ -460,7 +460,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 52,
       "playerName": "Darnell Washington",
@@ -469,7 +469,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 53,
       "playerName": "Elijah Higgins",
@@ -478,7 +478,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 54,
       "playerName": "Adam Trautman",
@@ -487,7 +487,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 55,
       "playerName": "Brenton Strange",
@@ -496,7 +496,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 56,
       "playerName": "Luke Schoonmaker",
@@ -505,7 +505,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 57,
       "playerName": "Durham Smythe",
@@ -514,7 +514,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 58,
       "playerName": "Brock Wright",
@@ -523,7 +523,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 59,
       "playerName": "Charlie Woerner",
@@ -532,7 +532,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 60,
       "playerName": "Johnny Mundt",
@@ -541,7 +541,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 61,
       "playerName": "Payne Durham",
@@ -550,7 +550,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 62,
       "playerName": "Josh Whyle",
@@ -559,7 +559,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 63,
       "playerName": "Irv Smith",
@@ -568,7 +568,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 64,
       "playerName": "Josh Oliver",
@@ -577,7 +577,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 65,
       "playerName": "Tip Reiman",
@@ -586,7 +586,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 66,
       "playerName": "Ian Thomas",
@@ -595,7 +595,7 @@
       "adp": "-"
     },
     {
-      "prefferred": 0,
+      "preferred": 0,
       "tier": 7,
       "rank": 67,
       "playerName": "Eric Saubert",
