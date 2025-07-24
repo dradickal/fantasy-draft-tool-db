@@ -1,26 +1,5 @@
 a { color: #0070f3; }
 
-header {
-    display: flex;
-    border-bottom: 1px solid;
-    padding-left: 2em;
-}
-
-.header-title {
-    display: flex;
-    flex: fit-content;
-}
-.header-icon {
-    width: 60px;
-    padding-right: 1em;
-}
-
-.header-tools {
-    display: flex;
-    align-items: center;
-    flex: fit-content;
-}
-
 .asH1 {
     display: inline-block;
     padding: .6em 0;
@@ -46,6 +25,15 @@ tr.player {
 
 tr.player.visible {
     display: table-row;
+}
+
+.playerNameCol {
+    text-align: left;
+}
+.playerNameCol.drafted {
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
 }
 
 td {
@@ -79,3 +67,17 @@ td {
     width: 100%;
 }
 
+.inputGroup {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.inputGroup > label {
+    font-size: 0.8em;
+}
+
+.inputGroup > input, .inputGroup > select {
+    display: block;
+    padding: 0.5rem;
+    margin-top: -0.3em;
+}
