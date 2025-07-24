@@ -10,7 +10,7 @@ import { PersisterContext } from './utils/PersisterContext';
 import { urlParams } from './utils/urlParams';
 import PlayerTable from './PlayerTable';
 import LeagueSettings from './LeagueSettings';
-import './app.module.scss';
+import './app.scss';
 
 const positionTables: Array<string> = ["QB", "RB", "WR", "TE", "DEF", "K"];
 const years: Array<number> = [2024, 2022];

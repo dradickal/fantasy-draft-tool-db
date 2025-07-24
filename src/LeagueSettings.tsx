@@ -3,7 +3,7 @@ import { usePersister } from "./utils/PersisterContext";
 import { useState } from "react";
 import FantasyTeams from "./LeagueSettings-FantasyTeams.js";
 import RosterConfig from "./LeagueSettings-RosterConfig.js";
-import './leagueSettings.module.scss';
+import './leagueSettings.scss';
 
 const { useStore, useValue } = TypedUI;
 

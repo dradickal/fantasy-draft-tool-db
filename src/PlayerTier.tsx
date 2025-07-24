@@ -2,7 +2,7 @@ import PlayerRow from "./PlayerRow";
 // import { useResultTable, useSliceRowIds } from "tinybase/ui-react";
 import { useEffect, useState } from "react";
 import TypedUI from "./utils/TypedUI";
-import './playerTier.module.scss';
+import './playerTier.scss';
 
 const { useResultTable, useSliceRowIds } = TypedUI;
 
