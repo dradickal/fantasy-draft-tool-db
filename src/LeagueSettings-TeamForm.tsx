@@ -42,6 +42,12 @@ export function FantasyTeamForm({ teamCount, currentTeam }:FantasyTeamFormProps)
                     ))}
                 </select>
             </div>
+
+            <div className="inputGroup">
+                <label htmlFor={`teamOwner${i}`}>Team Owner:</label>
+                <input type="text" id={`teamOwner${i}`} name="owner" defaultValue={currentTeam.owner}/>
+            </div>
+            
             <div className="inputGroup">
                 <label htmlFor={`teamName${i}`}>Team Name:</label>
                 <input type="text" id={`teamName${i}`} name="name" defaultValue={currentTeam.name}/>
@@ -50,11 +56,6 @@ export function FantasyTeamForm({ teamCount, currentTeam }:FantasyTeamFormProps)
             <div className="inputGroup">
                 <label htmlFor={`teamAbbr${i}`}>Team Abbreviation:</label>
                 <input type="text" id={`teamAbbr${i}`} name="abbr" defaultValue={currentTeam.abbr}/>
-            </div>
-
-            <div className="inputGroup">
-                <label htmlFor={`teamOwner${i}`}>Team Owner:</label>
-                <input type="text" id={`teamOwner${i}`} name="owner" defaultValue={currentTeam.owner}/>
             </div>
         </form>
     )
