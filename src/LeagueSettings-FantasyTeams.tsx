@@ -1,18 +1,20 @@
 import TypedUI from "./utils/TypedUI.js";
 import type { Row } from "tinybase";
-import { ReactElement, FormEvent } from "react";
+import { ReactElement } from "react";
 import { nanoid } from "nanoid";
 import type { FantasyTeam } from "./types/LeagueSettings.js";
-import { usePersister } from "./utils/PersisterContext";
 import { FantasyTeamForm } from "./LeagueSettings-TeamForm.js";
 
 const { useStore, useValue } = TypedUI;
 
+function createNewTeam() {
+    return {id: nanoid(10), name: '', abbr: '', owner: '', order: 0} as FantasyTeam;
+}
 
 export default function FantasyTeams() {
     const store = useStore();
-    const persister = usePersister();
     const teamCount = useValue('teamCount');
+    const fantasyTeamIds = store?.getSortedRowIds('teams', 'order', false) || [];
 
     function teamCountChange(e:React.ChangeEvent<HTMLSelectElement>) {
         const selectedTeamCount = parseInt(e.target.value);
@@ -20,21 +22,19 @@ export default function FantasyTeams() {
     }
 
     let teamForms:Array<ReactElement> = [];
-    const fantasyTeamIds = store?.getSortedRowIds('teams', 'order', false) || [];
-    console.log(fantasyTeamIds);
     fantasyTeamIds.forEach((id) => {
         const row = store?.getRow('teams', id) as Row;
         const team = Object.assign(row, { id: id });
-        console.log(team);
+        
         teamForms.push((
-            <FantasyTeamForm key={id} teamCount={teamCount} currentTeam={team as FantasyTeam} />         
+            <FantasyTeamForm key={id} currentTeam={team as FantasyTeam} />         
         ));
     });
 
     for(let i = (fantasyTeamIds.length); i < teamCount; i++) {
-        const newTeam = {id: nanoid(10), name: '', abbr: '', owner: '', order: i + 1} as FantasyTeam;
+        const newTeam = createNewTeam();
         teamForms.push((
-            <FantasyTeamForm key={newTeam.id} teamCount={teamCount} currentTeam={newTeam} />         
+            <FantasyTeamForm key={newTeam.id} currentTeam={newTeam} />         
         ));
     }
     

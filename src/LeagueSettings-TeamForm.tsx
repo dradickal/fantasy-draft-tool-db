@@ -6,16 +6,15 @@ import TypedUI from "./utils/TypedUI";
 const { useSetPartialRowCallback } = TypedUI;
 
 type FantasyTeamFormProps = {
-    teamCount: number;
     currentTeam: FantasyTeam;
 }
 
-export function FantasyTeamForm({ teamCount, currentTeam }:FantasyTeamFormProps) {
+export function FantasyTeamForm({ currentTeam }:FantasyTeamFormProps) {
     const form = useRef<HTMLFormElement>(null);
-    const i = currentTeam.order;
+    const id = currentTeam.id;
     const setFantasyTeam = useSetPartialRowCallback(
         'teams', 
-        currentTeam.id, 
+        id, 
         (data:any) => data
     );
     let activeDelay = new InputDelay(1800, setFantasyTeam);
@@ -33,29 +32,20 @@ export function FantasyTeamForm({ teamCount, currentTeam }:FantasyTeamFormProps)
     }
 
     return (
-        <form name={`teamForm-${currentTeam.id}`} onInput={inputListener} data-id={currentTeam.id} ref={form}>
+        <form name={`teamForm-${id}`} onInput={inputListener} data-id={id} ref={form}>
             <div className="inputGroup">
-                <label htmlFor={`teamPos${i}`}>Draft Position:</label>
-                <select id={`teamPos${i}`} name="order" defaultValue={currentTeam.order}>
-                    {[...Array(teamCount)].map((_, index) => (
-                        <option key={index} value={index + 1}>{index + 1}</option>
-                    ))}
-                </select>
-            </div>
-
-            <div className="inputGroup">
-                <label htmlFor={`teamOwner${i}`}>Team Owner:</label>
-                <input type="text" id={`teamOwner${i}`} name="owner" defaultValue={currentTeam.owner}/>
+                <label htmlFor={`teamOwner${id}`}>Team Owner:</label>
+                <input type="text" id={`teamOwner${id}`} name="owner" defaultValue={currentTeam.owner}/>
             </div>
             
             <div className="inputGroup">
-                <label htmlFor={`teamName${i}`}>Team Name:</label>
-                <input type="text" id={`teamName${i}`} name="name" defaultValue={currentTeam.name}/>
+                <label htmlFor={`teamName${id}`}>Team Name:</label>
+                <input type="text" id={`teamName${id}`} name="name" defaultValue={currentTeam.name}/>
             </div>
             
             <div className="inputGroup">
-                <label htmlFor={`teamAbbr${i}`}>Team Abbreviation:</label>
-                <input type="text" id={`teamAbbr${i}`} name="abbr" defaultValue={currentTeam.abbr}/>
+                <label htmlFor={`teamAbbr${id}`}>Team Abbreviation:</label>
+                <input type="text" id={`teamAbbr${id}`} name="abbr" defaultValue={currentTeam.abbr}/>
             </div>
         </form>
     )
