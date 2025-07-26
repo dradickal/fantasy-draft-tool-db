@@ -13,7 +13,7 @@ import LeagueSettings from './LeagueSettings';
 import './app.scss';
 
 const positionTables: Array<string> = ["QB", "RB", "WR", "TE", "DEF", "K"];
-const years: Array<number> = [2024, 2022];
+const years: Array<number> = [2025, 2024, 2022];
 const { useCreateStore, useCreateIndexes, useCreateQueries, useCreatePersister, Provider } = TypedUI;
 
 const setDebugData = (queries:any, indexes:any) => {
