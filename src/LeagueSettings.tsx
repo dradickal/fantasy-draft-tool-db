@@ -3,6 +3,7 @@ import { usePersister } from "./utils/PersisterContext";
 import { useState } from "react";
 import FantasyTeams from "./LeagueSettings-FantasyTeams.js";
 import RosterConfig from "./LeagueSettings-RosterConfig.js";
+import DraftConfig from "./LeagueSettings-DraftConfig.js";
 import './leagueSettings.scss';
 
 const { useStore, useValue } = TypedUI;
@@ -10,6 +11,7 @@ const { useStore, useValue } = TypedUI;
 const TABS: Record<string, React.JSX.Element> = {
     'teams': <FantasyTeams />,
     'roster': <RosterConfig />,
+    'draft': <DraftConfig />
 }
 
 export default function LeagueSettings() {
@@ -35,6 +37,7 @@ export default function LeagueSettings() {
                     <ul>
                         <li className={isActive('teams')} onClick={() => setSelectedTab('teams')}>Fantasy Teams</li>
                         <li className={isActive('roster')} onClick={() => setSelectedTab('roster')}>Roster Config</li>
+                        <li className={isActive('draft')} onClick={() => setSelectedTab('draft')}>Draft Config</li>
                     </ul>
                 </nav>
                 {TABS[selectedTab]}
