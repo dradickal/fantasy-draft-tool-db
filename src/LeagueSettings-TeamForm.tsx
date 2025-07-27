@@ -7,7 +7,7 @@ const { useSetPartialRowCallback } = TypedUI;
 
 type FantasyTeamFormProps = {
     currentTeam: FantasyTeam;
-}
+};
 
 export function FantasyTeamForm({ currentTeam }:FantasyTeamFormProps) {
     const form = useRef<HTMLFormElement>(null);

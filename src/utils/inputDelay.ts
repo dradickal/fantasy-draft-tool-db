@@ -13,12 +13,12 @@ export class InputDelay {
         this.delayCallback = delayCallback;
     }
 
-    startDelay(label:DelayLabel, target:any) {
+    startDelay(label:DelayLabel, dataArg:any) {
         this.label = label;
         this.timeoutId = setTimeout((data:any) => {
             this.delayCallback(data);
             console.log(label, data);
-        }, this.delay, target);
+        }, this.delay, dataArg);
     }
 
     cancelDelay() {
