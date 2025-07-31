@@ -10,16 +10,16 @@ type FantasyTeamFormProps = {
 };
 
 export function FantasyTeamForm({ currentTeam }:FantasyTeamFormProps) {
-    const form = useRef<HTMLFormElement>(null);
     const id = currentTeam.id;
+    const form = useRef<HTMLFormElement>(null);
     const setFantasyTeam = useSetPartialRowCallback(
         'teams', 
         id, 
-        (data:any) => data
+        (data:any) => data,
     );
     let activeDelay = new InputDelay(1800, setFantasyTeam);
 
-    function inputListener(e: any) {
+    const inputListener = (e: any) => {
         const form = e.currentTarget as HTMLFormElement;
         const fantasyTeamID = form.dataset.id as string;
         const data = Object.fromEntries(new FormData(form));
