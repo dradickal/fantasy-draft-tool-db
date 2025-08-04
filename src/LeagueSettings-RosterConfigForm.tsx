@@ -6,9 +6,9 @@ import { RosterCountInput } from "./LeagueSettings.RosterCountInput";
 const {useTable, useSetTableCallback } = TypedUI;
 
 export default function RosterConfigForm() {
-    let roster = useTable('rosterConfig')  as any;
+    let roster = useTable('rosterConfig') as any;
     console.log(roster);
-    const flexTypes = roster.flex.allowed;
+    const flexTypes = JSON.parse(roster.flex.allowed);
     const totalCount = Object.values(roster as RosterConfig).reduce((total, v) => total + v.count, 0);
     const setRosterConfig = useSetTableCallback(
         'rosterConfig',
