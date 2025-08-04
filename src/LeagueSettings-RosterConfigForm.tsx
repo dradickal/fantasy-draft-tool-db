@@ -1,19 +1,19 @@
+import { useEffect } from "react";
+import type { RosterConfig, RosterLabels, RosterLabelSettings } from "./types/LeagueSettings";
+import TypedUI from "./utils/TypedUI";
+import { RosterCountInput } from "./LeagueSettings.RosterCountInput";
 
-const defaultRoster = {
-    qb: { count: 1 },
-    rb: { count: 2 },
-    wr: { count: 3 },
-    te: { count: 1 },
-    flex: { count: 1, types: ['rb', 'wr'] },
-    k: { count: 1 },
-    def: { count: 1 },
-    bench: { count: 5 },
-};
+const {useTable, useSetTableCallback } = TypedUI;
 
-export default function RosterConfig() {
-    let roster = defaultRoster;
-    let flexTypes = roster.flex.types as string[];
-    const totalCount = Object.values(roster).reduce((total, v) => total + v.count, 0);
+export default function RosterConfigForm() {
+    let roster = useTable('rosterConfig')  as any;
+    console.log(roster);
+    const flexTypes = roster.flex.allowed;
+    const totalCount = Object.values(roster as RosterConfig).reduce((total, v) => total + v.count, 0);
+    const setRosterConfig = useSetTableCallback(
+        'rosterConfig',
+        (data:any) => data,
+    );
 
     return (
         <div className="leagueSettings-content rosterConfig">

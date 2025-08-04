@@ -1,6 +1,8 @@
 import { createStore } from 'tinybase/with-schemas';
 import { Player, PlayerData } from './dataTypes';
+import { RosterConfig } from '../types/LeagueSettings';
 import { valuesSchema } from './schemas';
+import { serialzeTable } from './serializeTable';
 
 const positions = ['QB', 'RB', 'WR', 'TE', 'DEF', 'K'];
 
@@ -8,6 +10,17 @@ const defaultDataHandler = (pos: string, data: { players: Array<PlayerData>},) =
     //@ts-ignore
     window.DraftTool.fRankedLists[pos] = data.players;
 }
+
+const defaultRosterConfig: RosterConfig = {
+    qb: { count: 1, allowed: ['qb'] },
+    rb: { count: 2,  allowed: ['rb']},
+    wr: { count: 3, allowed: ['wr']},
+    te: { count: 1, allowed: ['te'] },
+    flex: { count: 1, allowed: ['rb', 'wr', 'te'] },
+    k: { count: 1, allowed: ['k'] },
+    def: { count: 1, allowed: ['def'] },
+    bench: { count: 5, allowed: ['qb', 'rb', 'wr', 'te', 'def', 'k'] },
+};
 
 async function fetchPositionData(year:number, dataCallback = defaultDataHandler) {
     return Promise.all(positions.map(
@@ -47,6 +60,8 @@ export function createAndSeedStore(seededCallback:Function, year = new Date().ge
         seededCallback();
         console.log('Store is Seeded by localStorage');
     } else {
+
+        typedStore.setTable('rosterConfig', serialzeTable(defaultRosterConfig) as any);
         fetchPositionData(year, (pos, data) => {
             const players = data.players;
             for (let player of players) {

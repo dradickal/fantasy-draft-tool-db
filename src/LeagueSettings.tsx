@@ -2,7 +2,7 @@ import TypedUI from "./utils/TypedUI.js";
 import { usePersister } from "./utils/PersisterContext";
 import { useState } from "react";
 import FantasyTeams from "./LeagueSettings-FantasyTeams.js";
-import RosterConfig from "./LeagueSettings-RosterConfig.js";
+import RosterConfigForm from "./LeagueSettings-RosterConfigForm.js";
 import DraftConfig from "./LeagueSettings-DraftConfig.js";
 import './leagueSettings.scss';
 
@@ -10,7 +10,7 @@ const { useStore, useValue } = TypedUI;
 
 const TABS: Record<string, React.JSX.Element> = {
     'teams': <FantasyTeams />,
-    'roster': <RosterConfig />,
+    'roster': <RosterConfigForm />,
     'draft': <DraftConfig />
 }
 
