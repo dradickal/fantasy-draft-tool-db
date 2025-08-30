@@ -110,12 +110,14 @@ export const SeasonConfigStore = (year: number) => {
         seasonConfigStore,
         (seasonConfigStore) => createLocalPersister(seasonConfigStore, DATED_STORE_ID),
         [],
-        async (persister) => await persister.load([
+        async (persister) => {
+            await persister.load([
             {
                 rosterConfig: defaultRosterConfig,
             }, 
             {}
-        ]),
+            ])
+        },
     );
 
     useProvideStore(STORE_ID, seasonConfigStore);

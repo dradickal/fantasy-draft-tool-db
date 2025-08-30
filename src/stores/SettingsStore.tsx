@@ -50,7 +50,7 @@ export const SettingsStore = () => {
     settingsStore,
     (settingsStore) => createLocalPersister(settingsStore, STORE_ID),
     [],
-    async (persister) => await persister.load(),
+    async (persister) => { await persister.load() },
   );
 
   useProvideStore(STORE_ID, settingsStore);
