@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import type { RosterConfig, RosterLabels, RosterLabelSettings } from "./types/LeagueSettings";
 import TypedUI from "./utils/TypedUI";
-import { RosterCountInput } from "./LeagueSettings.RosterCountInput";
+import { RosterCountInput } from "./LeagueSettings-RosterCountInput";
 
 const {useTable, useSetTableCallback } = TypedUI;
 

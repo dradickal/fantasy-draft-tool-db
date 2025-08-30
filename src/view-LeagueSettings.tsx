@@ -1,5 +1,5 @@
 import TypedUI from "./utils/TypedUI.js";
-import { usePersister } from "./utils/PersisterContext";
+import { usePersister } from "./utils/PersisterContext.js";
 import { useState } from "react";
 import FantasyTeams from "./LeagueSettings-FantasyTeams.js";
 import RosterConfigForm from "./LeagueSettings-RosterConfigForm.js";

@@ -11,6 +11,7 @@ import {
     createStore,
     ParameterizedCallback,
 } from 'tinybase/with-schemas';
+import { useSettingsValue } from './SettingsStore';
 
 type AsId<Key> = Exclude<Key & Id, number>;
 
@@ -100,7 +101,8 @@ const defaultRosterConfig = {
     bench: { count: 5, limit: 5, allowed: "['qb', 'rb', 'wr', 'te', 'def', 'k']" },
 };
 
-export const SeasonConfigStore = (year: number) => {
+export const SeasonConfigStore = () => {
+    const year = useSettingsValue('selectedYear');
     const DATED_STORE_ID = `${STORE_ID}${year}`;
     const seasonConfigStore = useCreateStore(() =>
         createStore().setSchema(TABLES_SCHEMA, VALUES_SCHEMA),
