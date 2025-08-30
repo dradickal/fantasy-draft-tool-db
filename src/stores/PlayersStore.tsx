@@ -1,11 +1,10 @@
-import {useCallback} from 'react';
 import {createLocalPersister} from 'tinybase/persisters/persister-browser/with-schemas';
 import * as UiReact from 'tinybase/ui-react/with-schemas';
 import {
   type Id,
   type NoValuesSchema,
-  type Store,
   createIndexes,
+  createQueries,
   createStore,
 } from 'tinybase/with-schemas';
 import { Player, PlayerData } from '../utils/dataTypes';
@@ -13,8 +12,10 @@ import { useSettingsValue } from './SettingsStore';
 
 type AsId<Key> = Exclude<Key & Id, number>;
 
-
 const STORE_ID = 'Players';
+const QUERIES_ID = 'Players';
+const INDEXES_ID = 'Players';
+
 const PLAYER_TABLE = {
     drafted: {type: 'boolean'},
     preferred: {type: 'boolean'},
@@ -36,11 +37,14 @@ const TABLES_SCHEMA = {
 
 type Schemas = [typeof TABLES_SCHEMA, NoValuesSchema];
 
-
 const {
     useCreateStore,
-    useProvideStore,
     useCreatePersister,
+    useCreateIndexes,
+    useCreateQueries,
+    useProvideStore,
+    useProvideIndexes,
+    useProvideQueries,
     useCell,
     useSetPartialRowCallback,
     useValue,
@@ -48,6 +52,7 @@ const {
 } = UiReact as UiReact.WithSchemas<Schemas>;
 
 export const POSITIONS = ['QB', 'RB', 'WR', 'TE', 'DEF', 'K'] as const;
+
 type Position = typeof POSITIONS[number];
 type DataCallback = (pos:Position, data:{ players: Array<PlayerData>}) => void;
 
@@ -81,6 +86,13 @@ export const PlayersStore = () => {
     const playersStore = useCreateStore(() =>
         createStore().setTablesSchema(TABLES_SCHEMA),
     );
+    useProvideStore(STORE_ID, playersStore);
+
+    const playersQueries = useCreateQueries(playersStore, (store) => createQueries(store));
+    const playersIndexes = useCreateIndexes(playersStore, (store) => createIndexes(store));
+
+    useProvideQueries(QUERIES_ID, playersQueries!);
+    useProvideIndexes(INDEXES_ID, playersIndexes!);
 
     useCreatePersister(
         playersStore,
@@ -101,8 +113,6 @@ export const PlayersStore = () => {
             }
         },
     );
-
-    useProvideStore(STORE_ID, playersStore);
     
     return null;
 };
