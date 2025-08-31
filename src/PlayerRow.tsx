@@ -5,7 +5,7 @@ import { usePositionTable } from "./utils/PositionTableContext";
 import { Player } from "./utils/dataTypes";
 import { usePersister } from "./utils/PersisterContext";
 import { useHidePlayers } from "./utils/HidePlayersContext";
-import { usePlayersRow } from "./stores/PlayersStore";
+import { usePlayersRow, usePlayersPersister, usePlayersSetCellCallback } from "./stores/PlayersStore";
 import TypedUI from "./utils/TypedUI";
 
 const { useSetCellCallback } = TypedUI;
@@ -16,7 +16,7 @@ type PlayerRowProps = {
 export default function PlayerRow({ rowId }: PlayerRowProps) {
     const positionTable = usePositionTable();
     const hideDraftedPlayers = useHidePlayers();
-    const persister = usePersister();
+    const persister = usePlayersPersister();
     const playerRow = usePlayersRow(positionTable, rowId);
     const [player, setPlayer] = useState<Player>();
 
@@ -36,11 +36,12 @@ export default function PlayerRow({ rowId }: PlayerRowProps) {
     }, [playerRow]);
 
     
-    const updateDraftedValue = useSetCellCallback(
+    const updateDraftedValue = usePlayersSetCellCallback(
         positionTable, 
         rowId, 
         'drafted', 
-        (newValue:boolean) => newValue)
+        (newValue:boolean) => newValue
+    );
     
     const beenDrafted = async (e:MouseEvent, rowId:string) => {
         console.log('Draft Click', rowId);
@@ -63,13 +64,3 @@ export default function PlayerRow({ rowId }: PlayerRowProps) {
         </tr>
     )
 }
-
-//       "playerId": 
-//       "drafted": false,
-//       "preferred": 0,
-//       "tier": 9,
-//       "rank": 107,
-//       "playerName": "Ben Skowronek",
-//       "team": "LAR",
-//       "byeWeek": "7",
-//       "adp": "-"

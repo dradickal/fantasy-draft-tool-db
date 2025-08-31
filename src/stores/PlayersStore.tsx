@@ -1,10 +1,12 @@
-import {createLocalPersister} from 'tinybase/persisters/persister-browser/with-schemas';
+import { createLocalPersister } from 'tinybase/persisters/persister-browser/with-schemas';
+import { DependencyList } from 'react';
 import * as UiReact from 'tinybase/ui-react/with-schemas';
 import {
   type Id,
   type NoValuesSchema,
   type Indexes,
   type Queries,
+  type Cell,
   createIndexes,
   createQueries,
   createStore,
@@ -39,6 +41,9 @@ const TABLES_SCHEMA = {
 
 type Schemas = [typeof TABLES_SCHEMA, NoValuesSchema];
 export type PlayersSchema = Schemas;
+type CellIds = AsId<
+    keyof (typeof PLAYER_TABLE)
+>;
 
 const {
     useCreateStore,
@@ -54,6 +59,8 @@ const {
     useIndexes,
     useSliceIds,
     useSliceRowIds,
+    useSetCellCallback,
+    useStore,
     useResultTable, 
     useRow,
     useSetPartialRowCallback,
@@ -163,6 +170,17 @@ export function setTieredPlayersQuery(queries: Queries<Schemas>, queryName: stri
             select('adp');
             where('tier', tier);
         });
+}
+
+export function usePlayersSetCellCallback<Parameter, CellId extends CellIds> (
+    tableId:Position, 
+    rowId:Id, 
+    cellId:CellId, 
+    getCell:(param:Parameter ) => Cell<Schemas[0], typeof tableId, CellId>,
+    getCellDeps?: DependencyList,
+) {
+    const store = useStore(STORE_ID);
+    return useSetCellCallback(tableId, rowId, cellId, getCell, getCellDeps, STORE_ID);
 }
 
 interface PlayerStoreProps {
