@@ -1,93 +1,51 @@
-import { StrictMode, useState, useRef } from 'react';
-import cn from "classnames";
-import {Provider as TinyBaseProvider} from 'tinybase/ui-react';
-import {Inspector} from 'tinybase/ui-react-inspector';
-import { SettingsStore } from './stores/SettingsStore.js';
+import { StrictMode, useRef } from 'react';
+import { Provider as TinyBaseProvider, usePersister } from 'tinybase/ui-react';
+import { Inspector } from 'tinybase/ui-react-inspector';
+import { SettingsStore, useSettingsValue } from './stores/SettingsStore.js';
 import { SeasonConfigStore } from './stores/SeasonConfigStore.js';
-import { PlayersStore } from './stores/PlayersStore.js';
-import TypedUI from "./utils/TypedUI.js";
-import { createIndexes, createQueries } from 'tinybase/with-schemas';
-import { createLocalPersister } from 'tinybase/persisters/persister-browser/with-schemas';
-import { createAndSeedStore } from './utils/store';
+import { PlayersStore, POSITIONS, usePlayersPersister } from './stores/PlayersStore.js';
 import { PositionTableContext } from './utils/PositionTableContext';
 import { HidePlayersContext } from './utils/HidePlayersContext';
-import { PersisterContext } from './utils/PersisterContext';
-import { urlParams } from './utils/urlParams';
 import PlayerTable from './PlayerTable';
 import LeagueSettings from './view-LeagueSettings.js';
+import { Header } from './view-Header.js';
 import './app.scss';
 
-const positionTables: Array<string> = ["QB", "RB", "WR", "TE", "DEF", "K"];
-const years: Array<number> = [2025, 2024, 2022];
-const { useCreateStore, useCreateIndexes, useCreateQueries, useCreatePersister } = TypedUI;
+import { PersisterContext } from './utils/PersisterContext';
 
-const setDebugData = (queries:any, indexes:any) => {
-  // @ts-ignore
-  window.DraftTool = {};
-  // @ts-ignore
-  window.DraftTool.queries = queries;
-  // @ts-ignore
-  window.DraftTool.indexes = indexes;
-}
 
 export const App = () => {
-  const [year, setYear] = useState<number>(years[0]);
-  const [playersHydrated, setPlayersHydrated] = useState<boolean>(false);
-  const [hideDraftedPlayers, setHideDraftedPlayers] = useState<boolean>(true);
-  const dialog = useRef<HTMLDialogElement>(null);
-  const store = useCreateStore(() => createAndSeedStore(() => {
-    setPlayersHydrated(true);
-  }, year), [year]);
-  const queries = useCreateQueries(store, (store) => createQueries(store));
-  const indexes = useCreateIndexes(store, (store) => createIndexes(store));
-  const persister = useCreatePersister(store, (store) => createLocalPersister(store, 'DraftTool' + year));
+    const dialogRef = useRef<HTMLDialogElement>(null);
 
-  const handleYearChange = (event: React.ChangeEvent<HTMLSelectElement>) => { 
-    const selectedYear = parseInt(event.target.value);
-    setYear(selectedYear);
-    setPlayersHydrated(false);
-  };
+    return (
+        <StrictMode>
+            <TinyBaseProvider>
+                <SettingsStore />
+                <SeasonConfigStore />
+                <PlayersStore year={useSettingsValue('selectedYear')}/>
+                <Inspector />
 
-  const handleHidePlayers = (event:React.ChangeEvent<HTMLInputElement>) => {
-    setHideDraftedPlayers(event.target.checked)
-  }
+                <Header dialogRef={dialogRef} />
 
-  const openModal = () => {
-    dialog.current?.showModal();
-  }
-
-  const resetData = () => {
-    localStorage.removeItem(`DraftTool${year}`);
-    location.reload()
-  }
-
-  setDebugData(queries, indexes);
-
-  return (
-    <StrictMode>
-      <TinyBaseProvider>
-        <SettingsStore />
-        <SeasonConfigStore />
-        <PlayersStore />
-        <Inspector />
-        
-        <div className='contentContainer'>
-          <div className='rankTables'>
-            {positionTables.map((tableId) => (
-                <section className="positionTable" key={tableId}>
-                  <PositionTableContext.Provider value={tableId} >
-                  <HidePlayersContext.Provider value={hideDraftedPlayers}>
-                    <PlayerTable />
-                  </HidePlayersContext.Provider>
-                  </PositionTableContext.Provider>
-                </section>
-            ))}
-          </div>
-          <dialog className='leagueSettings' ref={dialog}>
-            <LeagueSettings />
-          </dialog>
-        </div>
-      </TinyBaseProvider>
-    </StrictMode>
-  );
+                <PersisterContext.Provider value={usePlayersPersister()}>
+                    <div className='contentContainer'>
+                        <div className='rankTables'>
+                            {POSITIONS.map((tableId) => (
+                                <section className="positionTable" key={tableId}>
+                                    <PositionTableContext.Provider value={tableId}>
+                                        <HidePlayersContext.Provider value={false}>
+                                            <PlayerTable />
+                                        </HidePlayersContext.Provider>
+                                    </PositionTableContext.Provider>
+                                </section>
+                            ))}
+                        </div>
+                        <dialog className='leagueSettings' ref={dialogRef}>
+                            <LeagueSettings />
+                        </dialog>
+                    </div>
+                </PersisterContext.Provider>
+            </TinyBaseProvider>
+        </StrictMode>
+    );
 };
