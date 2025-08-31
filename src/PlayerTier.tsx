@@ -1,10 +1,7 @@
 import PlayerRow from "./PlayerRow";
-// import { useResultTable, useSliceRowIds } from "tinybase/ui-react";
 import { useEffect, useState } from "react";
-import TypedUI from "./utils/TypedUI";
+import { usePlayersSliceRowIds, usePlayersResultTable } from "./stores/PlayersStore";
 import './playerTier.scss';
-
-const { useResultTable, useSliceRowIds } = TypedUI;
 
 type PlayerTierProps = {
     tier: string; // comes from index SliceID
@@ -14,10 +11,10 @@ type PlayerTierProps = {
 
 export default function PlayerTier({ tier, indexNames, queryNames}: PlayerTierProps) {
     const tierNum = Number(tier);
-    const resultTable = useResultTable(queryNames.draftCountQuery);
+    const resultTable = usePlayersResultTable(queryNames.draftCountQuery);
     const [undraftedCount, setUndraftedCount] = useState(0);
 
-    const playerRows = useSliceRowIds(indexNames.tierIndex, tier);
+    const playerRows = usePlayersSliceRowIds(indexNames.tierIndex, tier);
     const [tierCount, setTierCount] = useState(0);
 
     useEffect(() => {

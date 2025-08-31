@@ -53,7 +53,9 @@ const {
     useQueries,
     useIndexes,
     useSliceIds,
-    useCell,
+    useSliceRowIds,
+    useResultTable, 
+    useRow,
     useSetPartialRowCallback,
     useValue,
     useSetValueCallback,
@@ -103,6 +105,18 @@ export function usePlayersIndexes() {
 
 export function usePlayersSliceIds(indexName:string) {
     return useSliceIds(indexName, INDEXES_ID);
+}
+
+export function usePlayersSliceRowIds(indexName:string, tier:string) {
+    return useSliceRowIds(indexName, tier, INDEXES_ID);
+}
+
+export function usePlayersResultTable(queryName:string) {
+    return useResultTable(queryName, QUERIES_ID);
+}
+
+export function usePlayersRow(tableId:Position, rowId:string) {
+    return useRow(tableId, rowId, STORE_ID);
 }
 
 export function setTierIndex(indexes: Indexes<Schemas>, indexName:string, posTable:Position) {

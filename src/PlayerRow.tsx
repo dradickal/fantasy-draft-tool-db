@@ -5,9 +5,10 @@ import { usePositionTable } from "./utils/PositionTableContext";
 import { Player } from "./utils/dataTypes";
 import { usePersister } from "./utils/PersisterContext";
 import { useHidePlayers } from "./utils/HidePlayersContext";
+import { usePlayersRow } from "./stores/PlayersStore";
 import TypedUI from "./utils/TypedUI";
 
-const { useRow, useSetCellCallback } = TypedUI;
+const { useSetCellCallback } = TypedUI;
 type PlayerRowProps = {
     rowId: Id;
 }
@@ -16,7 +17,7 @@ export default function PlayerRow({ rowId }: PlayerRowProps) {
     const positionTable = usePositionTable();
     const hideDraftedPlayers = useHidePlayers();
     const persister = usePersister();
-    const playerRow = useRow(positionTable, rowId);
+    const playerRow = usePlayersRow(positionTable, rowId);
     const [player, setPlayer] = useState<Player>();
 
     const showPlayer = () => {
