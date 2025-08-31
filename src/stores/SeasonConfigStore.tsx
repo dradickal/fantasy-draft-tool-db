@@ -94,7 +94,7 @@ const defaultRosterConfig = {
     qb: { count: 1, limit: 3, allowed: "['qb']" },
     rb: { count: 2, limit: 5, allowed: "['rb']" },
     wr: { count: 3, limit: 5, allowed: "['wr']" },
-    te: { count: 1, limit: 3,allowed: "['te']" },
+    te: { count: 1, limit: 3, allowed: "['te']" },
     k: { count: 1, limit: 3, allowed: "['k']" },
     def: { count: 1, limit: 3, allowed: "['def']" },
     flex: { count: 1, limit: 1, allowed: "['rb', 'wr', 'te']" },

@@ -3,6 +3,8 @@ import * as UiReact from 'tinybase/ui-react/with-schemas';
 import {
   type Id,
   type NoValuesSchema,
+  type Indexes,
+  type Queries,
   createIndexes,
   createQueries,
   createStore,
@@ -36,6 +38,7 @@ const TABLES_SCHEMA = {
 } as const;
 
 type Schemas = [typeof TABLES_SCHEMA, NoValuesSchema];
+export type PlayersSchema = Schemas;
 
 const {
     useCreateStore,
@@ -45,6 +48,11 @@ const {
     useProvideStore,
     useProvideIndexes,
     useProvideQueries,
+    useProvidePersister,
+    usePersister,
+    useQueries,
+    useIndexes,
+    useSliceIds,
     useCell,
     useSetPartialRowCallback,
     useValue,
@@ -53,7 +61,7 @@ const {
 
 export const POSITIONS = ['QB', 'RB', 'WR', 'TE', 'DEF', 'K'] as const;
 
-type Position = typeof POSITIONS[number];
+export type Position = typeof POSITIONS[number];
 type DataCallback = (pos:Position, data:{ players: Array<PlayerData>}) => void;
 
 async function fetchPositionData(year:number, dataCallbackFn:DataCallback) {
@@ -81,8 +89,73 @@ function addPlayerProperties(player:PlayerData):Player {
     return Object.assign(player, { drafted: false })
 }
 
-export const PlayersStore = () => {
-    const YEAR = useSettingsValue('selectedYear');
+export function usePlayersPersister() {
+    return usePersister('Players');
+};
+
+export function usePlayersQueries() {
+    return useQueries(QUERIES_ID);
+}
+
+export function usePlayersIndexes() {
+    return useIndexes(INDEXES_ID);
+}
+
+export function usePlayersSliceIds(indexName:string) {
+    return useSliceIds(indexName, INDEXES_ID);
+}
+
+export function setTierIndex(indexes: Indexes<Schemas>, indexName:string, posTable:Position) {
+    indexes.setIndexDefinition(
+        indexName,
+        posTable,
+        'tier'
+    ); 
+}
+
+export function setDraftedIndex(indexes: Indexes<Schemas>, indexName:string, posTable:Position) {
+    indexes.setIndexDefinition(
+        indexName,
+        posTable,
+        'drafted'
+    );
+}
+
+export function setTierDraftCountQuery(queries: Queries<Schemas>, queryName: string, posTable:Position) {
+    return queries.setQueryDefinition(
+        queryName,
+        posTable,
+        ({ select, group, where }) => {
+            select('tier');
+            select('drafted');
+            where('drafted', false)
+            group('drafted', 'count').as('undraftedCount');
+        }
+    ); 
+}
+
+
+export function setTieredPlayersQuery(queries: Queries<Schemas>, queryName: string, posTable:Position, tier: number) {
+    return queries.setQueryDefinition(
+        queryName, 
+        posTable, 
+        ({select, where}) => {
+            select('drafted');
+            select('preferred');
+            select('rank');
+            select('playerName');
+            select('team');
+            select('byeWeek');
+            select('adp');
+            where('tier', tier);
+        });
+}
+
+interface PlayerStoreProps {
+    year: number;
+};
+
+export const PlayersStore = ({ year = 2025 }:PlayerStoreProps) => {
     const playersStore = useCreateStore(() =>
         createStore().setTablesSchema(TABLES_SCHEMA),
     );
@@ -94,15 +167,15 @@ export const PlayersStore = () => {
     useProvideQueries(QUERIES_ID, playersQueries!);
     useProvideIndexes(INDEXES_ID, playersIndexes!);
 
-    useCreatePersister(
+    const persister = useCreatePersister(
         playersStore,
-        (playersStore) => createLocalPersister(playersStore, `${STORE_ID}${YEAR}`),
+        (playersStore) => createLocalPersister(playersStore, `${STORE_ID}${year}`),
         [],
         async (persister) => {
             await persister.load();
             
             if (!playersStore.hasTables()) {
-                await fetchPositionData(YEAR, (pos, data) => {
+                await fetchPositionData(year, (pos, data) => {
                     const players = data.players;
                     for (let player of players) {
                         const playerId = `${pos}${player.rank}`;
@@ -112,7 +185,11 @@ export const PlayersStore = () => {
                 });
             }
         },
+        [year]
     );
+
+    useProvidePersister('Players', persister);
+
     
     return null;
 };

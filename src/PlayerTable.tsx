@@ -2,11 +2,13 @@
 import PlayerTier from "./PlayerTier";;
 import { useEffect } from "react";
 import { usePositionTable } from "./utils/PositionTableContext";
-import { setTierIndex } from "./utils/indexes";
-import { setTierDraftCountQuery } from "./utils/queries";
-import TypedUI from "./utils/TypedUI";
-
-const { useIndexes, useQueries, useSliceIds } = TypedUI;
+import { 
+    usePlayersIndexes, 
+    usePlayersQueries, 
+    usePlayersSliceIds, 
+    setTierIndex,
+    setTierDraftCountQuery,
+} from "./stores/PlayersStore";
 
 export default function PlayerTable() {
     const positionTable = usePositionTable();
@@ -14,10 +16,10 @@ export default function PlayerTable() {
     const tierIndex = `${positionTable}tierIndex`;
     const draftCountQuery = `${positionTable}draftCountQuery`;
     
-    const queries = useQueries();
-    const indexes = useIndexes();
+    const queries = usePlayersQueries();
+    const indexes = usePlayersIndexes();
 
-    const indexTierIds = useSliceIds(tierIndex);
+    const indexTierIds = usePlayersSliceIds(tierIndex);
 
     useEffect(() => {
         if (queries) {

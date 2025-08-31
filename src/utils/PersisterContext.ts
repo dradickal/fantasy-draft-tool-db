@@ -1,8 +1,8 @@
 import { createContext, useContext } from "react";
-import { NoTablesSchema, Persister } from "tinybase/with-schemas";
-import { valuesSchema } from "./schemas";
+import { Persister, Persists } from "tinybase/persisters/with-schemas";
+import { PlayersSchema } from "../stores/PlayersStore";
 
-export const PersisterContext = createContext<Persister<[NoTablesSchema, typeof valuesSchema]> | null | undefined>(null);
+export const PersisterContext = createContext<Persister<PlayersSchema, Persists.StoreOrMergeableStore> | null | undefined>(null);
 
 export const usePersister = () => {
     const currentPersister = useContext(PersisterContext);
