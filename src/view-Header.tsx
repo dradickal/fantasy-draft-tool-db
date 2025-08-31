@@ -1,7 +1,8 @@
 import cn from "classnames";
-import { useRef, type RefObject } from "react";
+import { useRef, type RefObject, type ChangeEvent } from "react";
 import { useSetSettingsValueCallback, useSettingsValue } from "./stores/SettingsStore"
 import { urlParams } from './utils/urlParams';
+
 
 interface HeaderProps {
     dialogRef: RefObject<HTMLDialogElement>;
@@ -9,14 +10,20 @@ interface HeaderProps {
 
 export const Header = ({ dialogRef }: HeaderProps) => {
     const years = [2025, 2024, 2022];
-    const yearSelectRef = useRef<HTMLSelectElement>(null);
     const selectedYear = useSettingsValue('selectedYear');
     const hideDraftedPlayers = useSettingsValue('hideDraftedPlayers');
 
-    const handleYearChange = useSetSettingsValueCallback('selectedYear', () => {
-        return parseInt(yearSelectRef.current?.value as string);
-    });
-    const handleHidePlayers = useSetSettingsValueCallback('hideDraftedPlayers', () => !hideDraftedPlayers);
+    const handleYearChange = useSetSettingsValueCallback(
+        'selectedYear', 
+        (e:ChangeEvent<HTMLSelectElement>) => {
+            return parseInt(e.target.value as string);
+        }
+    );
+
+    const handleHidePlayers = useSetSettingsValueCallback(
+        'hideDraftedPlayers', 
+        (e:ChangeEvent<HTMLInputElement>) => e.target.checked
+    );
 
     const resetData = () => {
         localStorage.removeItem(`DraftTool${selectedYear}`);
@@ -34,14 +41,14 @@ export const Header = ({ dialogRef }: HeaderProps) => {
                 <h1>Fantasy Draft Tool</h1>
             </div>
             <div className='header-tools'>
-                <select ref={yearSelectRef} id='draft-year' className='draft-year' name='draft-year' defaultValue={selectedYear} onChange={handleYearChange}>
+                <select id='draft-year' className='draft-year' name='draft-year' defaultValue={selectedYear} onChange={handleYearChange}>
                     {years.map((year) => (
                         <option key={year} value={year}>{year}</option>
                     ))}
                 </select>
                 <div className='input-group'>
                     <label className='hide-players' htmlFor='hide-players'>
-                        <input type='checkbox' id='hide-players' name='hide-players' onChange={handleHidePlayers} checked={hideDraftedPlayers} />
+                        <input type='checkbox' id='hide-players' name='hide-players' onChange={handleHidePlayers} defaultChecked={hideDraftedPlayers} />
                         Hide Drafted Players
                     </label>
                 </div>
