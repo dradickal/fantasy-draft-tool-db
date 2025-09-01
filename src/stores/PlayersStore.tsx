@@ -60,7 +60,6 @@ const {
     useSliceIds,
     useSliceRowIds,
     useSetCellCallback,
-    useStore,
     useResultTable, 
     useRow,
     useSetPartialRowCallback,
@@ -179,7 +178,6 @@ export function usePlayersSetCellCallback<Parameter, CellId extends CellIds> (
     getCell:(param:Parameter ) => Cell<Schemas[0], typeof tableId, CellId>,
     getCellDeps?: DependencyList,
 ) {
-    const store = useStore(STORE_ID);
     return useSetCellCallback(tableId, rowId, cellId, getCell, getCellDeps, STORE_ID);
 }
 
