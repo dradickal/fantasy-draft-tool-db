@@ -1,40 +1,36 @@
-import TypedUI from "./utils/TypedUI.js";
 import type { Row } from "tinybase";
 import { ReactElement } from "react";
 import { nanoid } from "nanoid";
 import type { FantasyTeam } from "./types/LeagueSettings.js";
 import { FantasyTeamForm } from "./LeagueSettings-TeamForm.js";
-
-const { useStore, useValue } = TypedUI;
-
-function createNewTeam() {
-    return {id: nanoid(10), name: '', abbr: '', owner: '', order: 0} as FantasyTeam;
-}
+import { 
+    useSeasonSetValueCallback,
+    useSeasonValue,
+    useTeamIds,
+} from "./stores/SeasonConfigStore.js";
+import { Id } from "tinybase/with-schemas";
 
 export default function FantasyTeams() {
-    const store = useStore();
-    const teamCount = useValue('teamCount');
-    const fantasyTeamIds = store?.getSortedRowIds('teams', 'order', false) || [];
+    const teamCount = useSeasonValue('teamCount');
+    const fantasyTeamIds = useTeamIds() || [];
+    
 
-    function teamCountChange(e:React.ChangeEvent<HTMLSelectElement>) {
-        const selectedTeamCount = parseInt(e.target.value);
-        store?.setValue('teamCount', selectedTeamCount);
-    }
+    const teamCountChange = useSeasonSetValueCallback(
+        'teamCount',
+        (e:React.ChangeEvent<HTMLSelectElement>) => parseInt(e.target.value),
+    );
 
     let teamForms:Array<ReactElement> = [];
-    fantasyTeamIds.forEach((id) => {
-        const row = store?.getRow('teams', id) as Row;
-        const team = Object.assign(row, { id: id });
-        
+    fantasyTeamIds.forEach((id:Id) => {
         teamForms.push((
-            <FantasyTeamForm key={id} currentTeam={team as FantasyTeam} />         
+            <FantasyTeamForm key={id} teamId={id} />         
         ));
     });
 
     for(let i = (fantasyTeamIds.length); i < teamCount; i++) {
-        const newTeam = createNewTeam();
+        const newId = nanoid(10);
         teamForms.push((
-            <FantasyTeamForm key={newTeam.id} currentTeam={newTeam} />         
+            <FantasyTeamForm key={newId} teamId={newId} />         
         ));
     }
     
@@ -43,9 +39,13 @@ export default function FantasyTeams() {
             <label htmlFor="teamCount">Number of Teams:</label>
             <select id="teamCount" name="teamCount" value={teamCount} onChange={teamCountChange}>
                 <option value="6">6</option>
+                <option value="7">7</option>
                 <option value="8">8</option>
+                <option value="9">9</option>
                 <option value="10">10</option>
+                <option value="11">11</option>
                 <option value="12">12</option>
+                <option value="13">13</option>
                 <option value="14">14</option>
             </select>
             {teamForms}

@@ -4,6 +4,7 @@ import { useState } from "react";
 import FantasyTeams from "./LeagueSettings-FantasyTeams.js";
 import RosterConfigForm from "./LeagueSettings-RosterConfigForm.js";
 import DraftConfig from "./LeagueSettings-DraftConfig.js";
+import { useSeasonPersister } from "./stores/SeasonConfigStore.js"
 import './leagueSettings.scss';
 
 const { useStore, useValue } = TypedUI;
@@ -16,8 +17,7 @@ const TABS: Record<string, React.JSX.Element> = {
 
 export default function LeagueSettings() {
     const [selectedTab, setSelectedTab] = useState('teams')
-    const store = useStore();
-    const persister = usePersister();
+    const persister = useSeasonPersister();
 
     const isActive = (tabName:string) => {
         return selectedTab === tabName ? 'active' : '';
