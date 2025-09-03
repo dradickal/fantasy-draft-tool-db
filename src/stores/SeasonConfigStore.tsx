@@ -113,8 +113,8 @@ const defaultRosterConfig = {
     te: { count: 1, limit: 3, allowed: 'te' },
     k: { count: 1, limit: 3, allowed: 'k' },
     def: { count: 1, limit: 3, allowed: 'def' },
-    flex: { count: 1, limit: 1, allowed: 'rb, wr, te' },
-    bench: { count: 5, limit: 5, allowed: 'qb, rb, wr, te, def, k' },
+    flex: { count: 1, limit: 1, allowed: 'rb,wr,te' },
+    bench: { count: 5, limit: 5, allowed: 'qb,rb,wr,te,def,k' },
 };
 
 export const SeasonConfigStore = () => {
