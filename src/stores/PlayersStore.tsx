@@ -17,6 +17,7 @@ import { useSettingsValue } from './SettingsStore';
 type AsId<Key> = Exclude<Key & Id, number>;
 
 const STORE_ID = 'Players';
+const PERSISTER_ID = 'Players';
 const QUERIES_ID = 'Players';
 const INDEXES_ID = 'Players';
 
@@ -98,7 +99,7 @@ function addPlayerProperties(player:PlayerData):Player {
 }
 
 export function usePlayersPersister() {
-    return usePersister('Players');
+    return usePersister(PERSISTER_ID);
 };
 
 export function usePlayersQueries() {
@@ -218,7 +219,7 @@ export const PlayersStore = ({ year = 2025 }:PlayerStoreProps) => {
         [year]
     );
 
-    useProvidePersister('Players', persister);
+    useProvidePersister(PERSISTER_ID, persister);
 
     
     return null;
