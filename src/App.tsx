@@ -1,9 +1,10 @@
 import { StrictMode, useRef } from 'react';
 import { Provider as TinyBaseProvider, usePersister } from 'tinybase/ui-react';
 import { Inspector } from 'tinybase/ui-react-inspector';
+import { POSITIONS } from './types/Common.js';
 import { SettingsStore, useSettingsValue } from './stores/SettingsStore.js';
 import { SeasonConfigStore } from './stores/SeasonConfigStore.js';
-import { PlayersStore, POSITIONS, usePlayersPersister } from './stores/PlayersStore.js';
+import { PlayersStore, usePlayersPersister } from './stores/PlayersStore.js';
 import { PositionTableContext } from './utils/PositionTableContext';
 import { HidePlayersContext } from './utils/HidePlayersContext';
 import PlayerTable from './PlayerTable';

@@ -1,21 +1,17 @@
 import type { RosterConfig, RosterLabels, RosterLabelSettings } from "./types/LeagueSettings";
-import TypedUI from "./utils/TypedUI";
-import { useRosterConfigTable } from "./stores/SeasonConfigStore";
 import { RosterCountInput } from "./LeagueSettings-RosterCountInput";
-
-
-const {useTable, useSetTableCallback } = TypedUI;
+import { 
+    useRosterConfigTable, 
+} from "./stores/SeasonConfigStore";
 
 export default function RosterConfigForm() {
     const rosterTable = useRosterConfigTable();
     const roster = Object.assign({}, rosterTable) as any;
-    console.log(roster);
     const flexTypes = roster.flex.allowed.split(',');
     const totalCount = Object.values(roster as RosterConfig).reduce((total, v) => total + v.count, 0);
-    const setRosterConfig = useSetTableCallback(
-        'rosterConfig',
-        (data:any) => data,
-    );
+    // const setRosterConfigTable = useRosterConfigSetTableCallback(
+    //     (data:any) => data,
+    // );
 
     return (
         <div className="leagueSettings-content rosterConfig">

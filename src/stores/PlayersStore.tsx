@@ -12,7 +12,7 @@ import {
   createStore,
 } from 'tinybase/with-schemas';
 import { Player, PlayerData } from '../utils/dataTypes';
-import { useSettingsValue } from './SettingsStore';
+import { type Position, POSITIONS } from '../types/Common';
 
 type AsId<Key> = Exclude<Key & Id, number>;
 
@@ -68,9 +68,6 @@ const {
     useSetValueCallback,
 } = UiReact as UiReact.WithSchemas<Schemas>;
 
-export const POSITIONS = ['QB', 'RB', 'WR', 'TE', 'DEF', 'K'] as const;
-
-export type Position = typeof POSITIONS[number];
 type DataCallback = (pos:Position, data:{ players: Array<PlayerData>}) => void;
 
 async function fetchPositionData(year:number, dataCallbackFn:DataCallback) {
