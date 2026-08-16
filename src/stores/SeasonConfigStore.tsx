@@ -5,7 +5,6 @@ import {
     type Id,
     type Value,
     type Row,
-    type Table,
     createStore,
 } from 'tinybase/with-schemas';
 import { type RosterId } from '../types/Common';
@@ -23,17 +22,21 @@ const VALUES_SCHEMA = {
 } as const;
 type ValueIds = keyof typeof VALUES_SCHEMA;
 
+const ROSTER_SLOT_TABLE = {
+    start: {type: 'number'},
+    limit: {type: 'number'},
+    allowed: {type: 'string'},
+} as const;
+
+const LEAGUE_TEAMS_TABLE = {
+    owner: {type: 'string'},
+    nickname: {type: 'string'},
+    draftPos: {type: 'number'},
+} as const;
+
 const TABLES_SCHEMA = {
-    rosterConfig: {
-        count: {type: 'number'},
-        limit: {type: 'number'},
-        allowed: {type: 'string'},
-    },
-    teams: {
-        owner: {type: 'string'},
-        nickname: {type: 'string'},
-        draftPos: {type: 'number'},
-    }
+    rosterConfig: ROSTER_SLOT_TABLE,
+    leagueTeams: LEAGUE_TEAMS_TABLE,
 } as const;
 
 type Schemas = [typeof TABLES_SCHEMA, typeof VALUES_SCHEMA];
@@ -55,7 +58,6 @@ const {
     useSetPartialRowCallback,
     useValue,
     useSetValueCallback,
-    useSetTableCallback,
 } = UiReact as UiReact.WithSchemas<Schemas>;
 
 /** PERSISTER HOOKS */
@@ -78,56 +80,56 @@ export const useSeasonSetValueCallback = <
 ) => useSetValueCallback(valueId, getValue, getValueDeps, STORE_ID);
 
 
-const ROSTERCONFIG_TABLE_ID = 'rosterConfig';
-const TEAM_TABLE_ID = 'teams';
+const ROSTER_CONFIG_TABLE_ID = 'rosterConfig';
+const LEAGUE_TEAMS_TABLE_ID = 'leagueTeams';
 
 /** TABLE HOOKS */
 
-export const useRosterConfigTable = () => useTable(ROSTERCONFIG_TABLE_ID, STORE_ID);
-export const useRosterConfigRow = (rosterConfigId: RosterId) => useRow(ROSTERCONFIG_TABLE_ID, rosterConfigId, STORE_ID);
-export const useTeamIds = () => useRowIds(TEAM_TABLE_ID, STORE_ID);
-export const useTeamRow = (id:Id) => useRow(TEAM_TABLE_ID, id, STORE_ID);
+export const useRosterConfigTable = () => useTable(ROSTER_CONFIG_TABLE_ID, STORE_ID);
+export const useRosterConfigRow = (rosterConfigId: RosterId) => useRow(ROSTER_CONFIG_TABLE_ID, rosterConfigId, STORE_ID);
+export const useTeamIds = () => useRowIds(LEAGUE_TEAMS_TABLE_ID, STORE_ID);
+export const useTeamRow = (id:Id) => useRow(LEAGUE_TEAMS_TABLE_ID, id, STORE_ID);
 
 export const useTeamsSetRowCallback = <
     Parameter,
 >(
     teamId: Id,
-    getPartialRow: (param: Parameter) => Row<Schemas[0], typeof TEAM_TABLE_ID>,
+    getPartialRow: (param: Parameter) => Row<Schemas[0], typeof LEAGUE_TEAMS_TABLE_ID>,
     getPartialRowDeps?: DependencyList
-) => useSetPartialRowCallback(TEAM_TABLE_ID, teamId, getPartialRow, getPartialRowDeps, STORE_ID);
+) => useSetPartialRowCallback(LEAGUE_TEAMS_TABLE_ID, teamId, getPartialRow, getPartialRowDeps, STORE_ID);
 
 export const useRosterConsfigSetRowCallback = <
     Parameter,
 >(
     rosterConfigId: RosterId,
-    getPartialRow: (param: Parameter) => Row<Schemas[0], typeof ROSTERCONFIG_TABLE_ID>,
+    getPartialRow: (param: Parameter) => Row<Schemas[0], typeof ROSTER_CONFIG_TABLE_ID>,
     getPartialRowDeps?: DependencyList
-) => useSetPartialRowCallback(ROSTERCONFIG_TABLE_ID, rosterConfigId, getPartialRow, getPartialRowDeps, STORE_ID);
+) => useSetPartialRowCallback(ROSTER_CONFIG_TABLE_ID, rosterConfigId, getPartialRow, getPartialRowDeps, STORE_ID);
 
 
 /** CELL HOOKS **/
-export const useRosterConfigCell = <CellId extends CellIds<typeof ROSTERCONFIG_TABLE_ID>>(
+export const useRosterConfigCell = <CellId extends CellIds<typeof ROSTER_CONFIG_TABLE_ID>>(
     rosterConfigId: RosterId,
     cellId: CellId,
-) => useCell(ROSTERCONFIG_TABLE_ID, rosterConfigId, cellId, STORE_ID);
+) => useCell(ROSTER_CONFIG_TABLE_ID, rosterConfigId, cellId, STORE_ID);
 
-export const useTeamCell = <CellId extends CellIds<typeof TEAM_TABLE_ID>>(
+export const useTeamCell = <CellId extends CellIds<typeof LEAGUE_TEAMS_TABLE_ID>>(
     teamId: Id,
     cellId: CellId,
-) => useCell(TEAM_TABLE_ID, teamId, cellId, STORE_ID);
+) => useCell(LEAGUE_TEAMS_TABLE_ID, teamId, cellId, STORE_ID);
 
 
 /** COMPONENT **/
 
 const defaultRosterConfig = {
-    QB: { count: 1, limit: 3, allowed: 'QB' },
-    RB: { count: 2, limit: 5, allowed: 'RB' },
-    WR: { count: 3, limit: 5, allowed: 'WR' },
-    TE: { count: 1, limit: 3, allowed: 'TE' },
-    K: { count: 1, limit: 3, allowed: 'K' },
-    DEF: { count: 1, limit: 3, allowed: 'DEF' },
-    FLEX: { count: 1, limit: 1, allowed: 'RB,WR,TE' },
-    BENCH: { count: 5, limit: 5, allowed: 'QB,RB,WR,TE,DEF,K' },
+    QB: { start: 1, limit: 3, allowed: 'QB' },
+    RB: { start: 2, limit: 5, allowed: 'RB' },
+    WR: { start: 3, limit: 5, allowed: 'WR' },
+    TE: { start: 1, limit: 3, allowed: 'TE' },
+    K: { start: 1, limit: 3, allowed: 'K' },
+    DEF: { start: 1, limit: 3, allowed: 'DEF' },
+    FLEX: { start: 1, limit: 1, allowed: 'RB,WR,TE' },
+    BENCH: { start: 5, limit: 5, allowed: 'QB,RB,WR,TE,DEF,K' },
 };
 
 export const SeasonConfigStore = () => {

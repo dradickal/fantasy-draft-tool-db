@@ -1,3 +1,5 @@
+import { Position, RosterId } from "./Common";
+
 export type FantasyTeam = {
     id: string;
     name: string;
@@ -5,16 +7,14 @@ export type FantasyTeam = {
     owner: string;
     order: number;
 };
-type ArrayString = string;
-export type Position = "qb" | "rb" | "wr" | "te" | "k" | "def";
-export type RosterLabels = Position | "flex" | "bench" ;
+
 export type RosterLabelSettings = {
-    count: number;
-    limit?: number;
-    allowed: Array<Position>;
+    start: number;
+    limit: number;
+    allowed: string;  // of type RosterId
 };
 
-export type RosterConfig = Record<RosterLabels, RosterLabelSettings>;
+export type RosterConfig = Record<RosterId, RosterLabelSettings>;
 
 export type LeagueSettings = {
     teamCount: number;

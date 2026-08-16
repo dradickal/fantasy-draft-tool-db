@@ -1,14 +1,14 @@
-import type { RosterConfig, RosterLabels, RosterLabelSettings } from "./types/LeagueSettings";
-import { RosterCountInput } from "./LeagueSettings-RosterCountInput";
+import type { RosterConfig } from "./types/LeagueSettings";
+import { RosterInput } from "./LeagueSettings-RosterCountInput";
 import { 
     useRosterConfigTable, 
 } from "./stores/SeasonConfigStore";
 
 export default function RosterConfigForm() {
     const rosterTable = useRosterConfigTable();
-    const roster = Object.assign({}, rosterTable) as any;
-    const flexTypes = roster.flex.allowed.split(',');
-    const totalCount = Object.values(roster as RosterConfig).reduce((total, v) => total + v.count, 0);
+    const roster: RosterConfig = Object.assign({}, rosterTable) as any;
+    const flexTypes = roster.FLEX.allowed.split(',');
+    const totalCount = Object.values(roster).reduce((total, v) => total + v.start, 0);
     // const setRosterConfigTable = useRosterConfigSetTableCallback(
     //     (data:any) => data,
     // );
@@ -20,62 +20,37 @@ export default function RosterConfigForm() {
                 <span>{totalCount}</span>
             </fieldset>
             <form name="leagueRoster">
-                <div className="inputGroup">
-                    <label htmlFor="qb">Quarterbacks:</label>
-                    <input type="number" id="qb" name="qb-count" defaultValue={roster.qb.count} />
-                </div>
-                <div className="inputGroup">
-                    <label htmlFor="rb">Running Backs:</label>
-                    <input type="number" id="rb" name="rb-count" defaultValue={roster.rb.count} />
-                </div>
-                <div className="inputGroup">
-                    <label htmlFor="wr">Wide Recievers:</label>
-                    <input type="number" id="wr" name="wr-count" defaultValue={roster.wr.count} />
-                </div>
-                <div className="inputGroup">
-                    <label htmlFor="te">Tight Ends:</label>
-                    <input type="number" id="te" name="te-ount" defaultValue={roster.te.count} />
-                </div>
-                <div className="inputGroup">
-                    <label htmlFor="flex">Flex Players:</label>
-                    <input type="number" id="flex" name="flex-count" defaultValue={roster.flex.count} />
-                </div>
-                <div className="inputGroup">
-                    <label htmlFor="k">Kickers:</label>
-                    <input type="number" id="k" name="k-count" defaultValue={roster.k.count} />
-                </div>
-                <div className="inputGroup">
-                    <label htmlFor="def">Defenses:</label>
-                    <input type="number" id="def" name="def-count" defaultValue={roster.def.count} />
-                </div>
-                <div className="inputGroup">
-                    <label htmlFor="bench">Bench Players:</label>
-                    <input type="number" id="bench" name="bench-count" defaultValue={roster.bench.count} />
-                </div>
-            </form>
-
-            <form name="flexPositions">
-                <fieldset>
-                    <legend>Allowed Flex Positions:</legend>
-                    <div className="checkbox">
-                        <div className="inputGroup">
-                            <input type="checkbox" id="flexRB" name="flex-type" value="rb" defaultChecked={flexTypes.includes('rb')} />
-                            <label htmlFor="flexRB">RB</label>
+                <RosterInput rosterSlot="QB" start={roster.QB.start} limit={roster.QB.limit} />
+                <RosterInput rosterSlot="RB" start={roster.RB.start} limit={roster.RB.limit} />
+                <RosterInput rosterSlot="WR" start={roster.WR.start} limit={roster.WR.limit} />
+                <RosterInput rosterSlot="TE" start={roster.TE.start} limit={roster.TE.limit} />
+                <RosterInput rosterSlot="K" start={roster.K.start} limit={roster.K.limit} />
+                <RosterInput rosterSlot="DEF" start={roster.DEF.start} limit={roster.DEF.limit} />
+                <RosterInput rosterSlot="FLEX" start={roster.FLEX.start} limit={roster.FLEX.limit}>
+                    <fieldset>
+                        <legend>Allowed Flex Positions:</legend>
+                        <div className="checkbox">
+                            <div className="inputGroup">
+                                <input type="checkbox" id="flexRB" name="flex-type" value="rb" defaultChecked={flexTypes.includes('RB')} />
+                                <label htmlFor="flexRB">RB</label>
+                            </div>
+                            <div className="inputGroup">
+                                <input type="checkbox" id="flexWR" name="flex-type" value="wr" defaultChecked={flexTypes.includes('WR')} />
+                                <label htmlFor="flexWR">WR</label>
+                            </div>
+                            <div className="inputGroup">
+                                <input type="checkbox" id="flexTE" name="flex-type" value="te" defaultChecked={flexTypes.includes('TE')} />
+                                <label htmlFor="flexTE">TE</label>
+                            </div>
+                            <div className="inputGroup">
+                                <input type="checkbox" id="flexQB" name="flex-type" value="qb" defaultChecked={flexTypes.includes('QB')} />
+                                <label htmlFor="flexQB">QB</label>
+                            </div>
                         </div>
-                        <div className="inputGroup">
-                            <input type="checkbox" id="flexWR" name="flex-type" value="wr" defaultChecked={flexTypes.includes('wr')} />
-                            <label htmlFor="flexWR">WR</label>
-                        </div>
-                        <div className="inputGroup">
-                            <input type="checkbox" id="flexTE" name="flex-type" value="te" defaultChecked={flexTypes.includes('te')} />
-                            <label htmlFor="flexTE">TE</label>
-                        </div>
-                        <div className="inputGroup">
-                            <input type="checkbox" id="flexQB" name="flex-type" value="qb" defaultChecked={flexTypes.includes('qb')} />
-                            <label htmlFor="flexQB">QB</label>
-                        </div>
-                    </div>
-                </fieldset>
+                    </fieldset>
+                </RosterInput>
+                <RosterInput rosterSlot="BENCH" start={roster.BENCH.start} limit={roster.BENCH.limit} />
+                
             </form>
         </div>
     );

@@ -11,17 +11,6 @@ const defaultDataHandler = (pos: string, data: { players: Array<PlayerData>},) =
     window.DraftTool.fRankedLists[pos] = data.players;
 }
 
-const defaultRosterConfig: RosterConfig = {
-    qb: { count: 1, allowed: ['qb'] },
-    rb: { count: 2,  allowed: ['rb']},
-    wr: { count: 3, allowed: ['wr']},
-    te: { count: 1, allowed: ['te'] },
-    flex: { count: 1, allowed: ['rb', 'wr', 'te'] },
-    k: { count: 1, allowed: ['k'] },
-    def: { count: 1, allowed: ['def'] },
-    bench: { count: 5, allowed: ['qb', 'rb', 'wr', 'te', 'def', 'k'] },
-};
-
 async function fetchPositionData(year:number, dataCallback = defaultDataHandler) {
     return Promise.all(positions.map(
         (pos) => fetch(import.meta.env.BASE_URL + `data/rankings/${year}/${pos}.json`, {
@@ -56,12 +45,9 @@ export function createAndSeedStore(seededCallback:Function, year = new Date().ge
     typedStore.setValue('selectedYear', year);
     
     if(localData) {
-        typedStore.setJson(localData);
         seededCallback();
         console.log('Store is Seeded by localStorage');
     } else {
-
-        typedStore.setTable('rosterConfig', serialzeTable(defaultRosterConfig) as any);
         fetchPositionData(year, (pos, data) => {
             const players = data.players;
             for (let player of players) {

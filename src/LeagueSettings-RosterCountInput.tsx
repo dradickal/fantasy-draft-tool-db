@@ -1,15 +1,29 @@
+import { PropsWithChildren } from "react";
+import { Position } from "./types/Common"
 
-type RosterCountInputParams = {
-    label: string,
-    count: number,
-    pos: string,
-}
+type RosterSlot = 'BENCH' | 'FLEX' | Position;
 
-export function RosterCountInput({ label, count, pos }:RosterCountInputParams) {
+type Params = {
+    rosterSlot: RosterSlot, 
+    start: number, 
+    limit: number
+};
+
+type RosterInputParams = PropsWithChildren<Params>;
+
+
+export function RosterInput({ rosterSlot, start, limit, children }:RosterInputParams) {
     return (
-        <div className="inputGroup">
-            <label htmlFor={pos}>{label}:</label>
-            <input type="number" id={pos} name={`${pos}-count`} defaultValue={count} />
+        <div className="rosterInputGroup">
+            <div className="inputGroup">
+                <label htmlFor={`${rosterSlot}-start`}>{rosterSlot} Starters:</label>
+                <input type="number" id={`${rosterSlot}-start`} name={`${rosterSlot}-start`} defaultValue={start} />
+            </div>
+            <div className="inputGroup">
+                <label htmlFor={`${rosterSlot}-limit`}>{rosterSlot} Limit:</label>
+                <input type="number" id={`${rosterSlot}-limit`} name={`${rosterSlot}-limit`} defaultValue={limit} />
+            </div>
+            {children}
         </div>
     );
 }
