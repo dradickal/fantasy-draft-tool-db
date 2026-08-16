@@ -26,7 +26,7 @@ export default function RosterConfigForm() {
                 <RosterInput rosterSlot="TE" start={roster.TE.start} limit={roster.TE.limit} />
                 <RosterInput rosterSlot="K" start={roster.K.start} limit={roster.K.limit} />
                 <RosterInput rosterSlot="DEF" start={roster.DEF.start} limit={roster.DEF.limit} />
-                <RosterInput rosterSlot="FLEX" start={roster.FLEX.start} limit={roster.FLEX.limit}>
+                <RosterInput rosterSlot="FLEX" start={roster.FLEX.start} limit={roster.FLEX.limit} syncLimit={true}>
                     <fieldset>
                         <legend>Allowed Flex Positions:</legend>
                         <div className="checkbox">
@@ -49,7 +49,7 @@ export default function RosterConfigForm() {
                         </div>
                     </fieldset>
                 </RosterInput>
-                <RosterInput rosterSlot="BENCH" start={roster.BENCH.start} limit={roster.BENCH.limit} />
+                <RosterInput rosterSlot="BENCH" start={roster.BENCH.start} limit={roster.BENCH.limit} syncLimit={true}/>
                 
             </form>
         </div>

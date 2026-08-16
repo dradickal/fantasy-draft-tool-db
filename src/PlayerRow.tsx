@@ -17,14 +17,13 @@ export default function PlayerRow({ rowId }: PlayerRowProps) {
     const persister = usePlayersPersister();
     const playerRow = usePlayersRow(positionTable, rowId);
     const [player, setPlayer] = useState<Player>();
+    const [showPlayer, setShowPlayer] = useState<boolean>(true);
 
-    const showPlayer = () => {
-        if (player && player.drafted) {
-            return !hideDraftedPlayers;
+    useEffect(() => {
+        if (player?.drafted) {
+            setShowPlayer(!hideDraftedPlayers)
         }
-
-        return true;
-    }
+    }, [player, hideDraftedPlayers]);
     
     useEffect(() => {
         if (playerRow) {
@@ -48,7 +47,7 @@ export default function PlayerRow({ rowId }: PlayerRowProps) {
     }
 
     return player ? (
-        <tr className={cn('player', {visible: showPlayer()})} >
+        <tr className={cn('player', {visible: showPlayer})} >
             <td>{!player.drafted && <button className="draftButton" id={`${rowId}`} onClick={(e)=>beenDrafted(e, rowId)}>Draft</button>}</td>
             <td>{player.rank}</td>
             <td className={cn('playerNameCol', {drafted: player.drafted})}>{player.playerName}</td>
