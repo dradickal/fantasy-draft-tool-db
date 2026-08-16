@@ -1,5 +1,5 @@
 import { createContext, useContext } from "react";
-import { type Position } from "../stores/PlayersStore";
+import { type Position } from '../types/Common';
 
 export const PositionTableContext = createContext<Position | null>(null);
 

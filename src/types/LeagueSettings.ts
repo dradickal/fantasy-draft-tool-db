@@ -10,7 +10,7 @@ export type Position = "qb" | "rb" | "wr" | "te" | "k" | "def";
 export type RosterLabels = Position | "flex" | "bench" ;
 export type RosterLabelSettings = {
     count: number;
-    limit: number;
+    limit?: number;
     allowed: Array<Position>;
 };
 

@@ -3,19 +3,17 @@ import { Id } from "tinybase";
 import { MouseEvent, useEffect, useState } from "react";
 import { usePositionTable } from "./utils/PositionTableContext";
 import { Player } from "./utils/dataTypes";
-import { usePersister } from "./utils/PersisterContext";
-import { useHidePlayers } from "./utils/HidePlayersContext";
 import { usePlayersRow, usePlayersPersister, usePlayersSetCellCallback } from "./stores/PlayersStore";
-import TypedUI from "./utils/TypedUI";
+import { useSettingsValue } from "./stores/SettingsStore";
 
-const { useSetCellCallback } = TypedUI;
+
 type PlayerRowProps = {
     rowId: Id;
 }
 
 export default function PlayerRow({ rowId }: PlayerRowProps) {
     const positionTable = usePositionTable();
-    const hideDraftedPlayers = useHidePlayers();
+    const hideDraftedPlayers = useSettingsValue('hideDraftedPlayers');
     const persister = usePlayersPersister();
     const playerRow = usePlayersRow(positionTable, rowId);
     const [player, setPlayer] = useState<Player>();

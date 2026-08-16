@@ -13,6 +13,7 @@ import {
 } from 'tinybase/with-schemas';
 import { Player, PlayerData } from '../utils/dataTypes';
 import { type Position, POSITIONS } from '../types/Common';
+import { useSettingsValue } from './SettingsStore';
 
 type AsId<Key> = Exclude<Key & Id, number>;
 
@@ -179,26 +180,28 @@ export function usePlayersSetCellCallback<Parameter, CellId extends CellIds> (
     return useSetCellCallback(tableId, rowId, cellId, getCell, getCellDeps, STORE_ID);
 }
 
-interface PlayerStoreProps {
-    year: number;
-};
 
-export const PlayersStore = ({ year = 2025 }:PlayerStoreProps) => {
-    const playersStore = useCreateStore(() =>
-        createStore().setTablesSchema(TABLES_SCHEMA),
+export const PlayersStore = () => {
+    const year = useSettingsValue('selectedYear');
+    const playersStore = useCreateStore(
+        () => createStore().setTablesSchema(TABLES_SCHEMA),
+        [year]
     );
     useProvideStore(STORE_ID, playersStore);
 
-    const playersQueries = useCreateQueries(playersStore, (store) => createQueries(store));
-    const playersIndexes = useCreateIndexes(playersStore, (store) => createIndexes(store));
+    const playersQueries = useCreateQueries(playersStore, (store) => createQueries(store), [year]);
+    const playersIndexes = useCreateIndexes(playersStore, (store) => createIndexes(store), [year]);
 
     useProvideQueries(QUERIES_ID, playersQueries!);
     useProvideIndexes(INDEXES_ID, playersIndexes!);
-
+    
+    
     const persister = useCreatePersister(
         playersStore,
-        (playersStore) => createLocalPersister(playersStore, `${STORE_ID}${year}`),
-        [],
+        (playersStore) => {
+            if (year === undefined) { return; }
+            return createLocalPersister(playersStore, `${STORE_ID}${year}`)},
+        [year],
         async (persister) => {
             await persister.load();
             
@@ -213,7 +216,6 @@ export const PlayersStore = ({ year = 2025 }:PlayerStoreProps) => {
                 });
             }
         },
-        [year]
     );
 
     useProvidePersister(PERSISTER_ID, persister);

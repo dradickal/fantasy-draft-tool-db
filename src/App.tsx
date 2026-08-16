@@ -23,7 +23,7 @@ export const App = () => {
             <TinyBaseProvider>
                 <SettingsStore />
                 <SeasonConfigStore />
-                <PlayersStore year={useSettingsValue('selectedYear')}/>
+                <PlayersStore />
                 <Inspector />
 
                 <Header dialogRef={dialogRef} />
@@ -34,9 +34,7 @@ export const App = () => {
                             {POSITIONS.map((tableId) => (
                                 <section className="positionTable" key={tableId}>
                                     <PositionTableContext.Provider value={tableId}>
-                                        <HidePlayersContext.Provider value={false}>
                                             <PlayerTable />
-                                        </HidePlayersContext.Provider>
                                     </PositionTableContext.Provider>
                                 </section>
                             ))}

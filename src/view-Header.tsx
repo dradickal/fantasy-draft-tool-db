@@ -9,7 +9,7 @@ interface HeaderProps {
 }
 
 export const Header = ({ dialogRef }: HeaderProps) => {
-    const years = [2025, 2024, 2022];
+    const years = [2026, 2025, 2024, 2022];
     const selectedYear = useSettingsValue('selectedYear');
     const hideDraftedPlayers = useSettingsValue('hideDraftedPlayers');
 

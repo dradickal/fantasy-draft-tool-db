@@ -10,9 +10,9 @@ import {
   createStore,
 } from 'tinybase/with-schemas';
 
-const STORE_ID = 'settings';
+const STORE_ID = 'Settings';
 const VALUES_SCHEMA = { 
-    selectedYear: { type: 'number', default: 2025 }, 
+    selectedYear: { type: 'number', default: 2026 }, 
     hideDraftedPlayers: { type: 'boolean', default: true },
     inDraftMode: { type: 'boolean', default: false },
 } as const;
